@@ -28,10 +28,10 @@ function Home() {
 
     <div className="relative h-full bg-cover" style={{ backgroundImage: `url(${fondo1})` }}>
 
-      <div className= {`sticky top-0 z-10 flex flex-row justify-between items-center bg-white px-10 py-8 transition-all duration-300 ${
-        isScrolled ? "shadow-lg rounded-b-3xl bg-white px-20 py-4 text-sm" : " "}`}>
+      <div className= {`sticky top-0 z-10 flex flex-row justify-between items-center bg-white transition-all duration-300 ${
+        isScrolled ? "shadow-lg rounded-b-3xl bg-white px-20 py-4 text-sm" : "px-10 py-8 "}`}>
         <div>
-          <img src={logoInt} alt={logoInt} className={`w-48 transition-all duration-300 ${isScrolled ? "w-24" : ""}`} />
+          <img src={logoInt} alt={logoInt} className={` transition-all duration-300 ${isScrolled ? "w-24" : "w-48"}`} />
         </div>
         <div className="font-semibold flex gap-12 items-center">
           <a href="" className="relative group">Inicio
