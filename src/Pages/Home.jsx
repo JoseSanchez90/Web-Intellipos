@@ -110,6 +110,9 @@ function Home() {
           </div>
           <div className="bg-cover">
             <img src={pos2} alt={pos2} />
+            <p>Software</p>
+            <p>Ofrecemos una solución completa para el sector de restaurantes que se adapta a cualquier tamaño y/o tipo de restaurante desde la operación de tu negocio hasta la fidelización de tus clientes</p>
+            <a href="">Más información</a>
           </div>
           <div>
 
