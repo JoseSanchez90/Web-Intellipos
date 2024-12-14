@@ -103,21 +103,18 @@ function Home() {
 
 {/* SPOT 3 */}
 
-      <div className="w-full h-full bg-white">
-        <div>
+      <div className="h-full bg-white">
+
           <div className="py-24">
             <p className="text-4xl px-96 font-medium text-center">Soluciones para la Gestión y Administración de restaurantes</p>
           </div>
-          <div className="bg-cover">
-            <img src={pos2} alt={pos2} />
+
+          <div className="w-full bg-cover" style={{ background: `url:(${pos2})` }}>
             <p>Software</p>
             <p>Ofrecemos una solución completa para el sector de restaurantes que se adapta a cualquier tamaño y/o tipo de restaurante desde la operación de tu negocio hasta la fidelización de tus clientes</p>
-            <a href="">Más información</a>
+            <button>Más información</button>
           </div>
-          <div>
 
-          </div>
-        </div>
       </div>
 
     </section>
