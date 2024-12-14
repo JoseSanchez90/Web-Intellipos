@@ -1,7 +1,9 @@
 import logoInt from '../assets/intelliposlogo.png'
 import '../Css/Home.css'
 import fondo1 from '../assets/3.jpg'
-import pos2 from '../assets/pos2.png'
+import pos2 from '../assets/pos2.jpg'
+import pos3 from '../assets/6.jpg'
+import ncr1 from '../assets/ncr1.jpg'
 import { useEffect, useState } from 'react';
 
 function Home() {
@@ -25,9 +27,9 @@ function Home() {
 
   return (
     
-    <section className="min-h-screen outfit-letters">
+    <section className="h-full w-full outfit-letters">
 
-    <div className="min-h-screen bg-cover" style={{ backgroundImage: `url(${fondo1})` }}>
+    <div className="bg-center h-screen bg-cover" style={{ backgroundImage: `url(${fondo1})` }}>
 
       <div className= {`w-[100%] fixed top-0 z-10 flex flex-row justify-between items-center bg-white transition-all duration-300 ${
         isScrolled ? "shadow-lg rounded-b-3xl bg-white px-20 py-4 text-sm" : "px-10 py-8 text-base"}`}>
@@ -54,12 +56,12 @@ function Home() {
         </div>
       </div>
 
-      <div className="absolute inset-0 bg-black/50"></div>
+      
         
         <div className="h-screen w-full">
-          <div className="py-64 pr-[45%] ml-16 relative animate-fade-down animate-duration-[1500ms] animate-delay-1000">
-            <p className="text-green-100 font-semibold text-5xl pb-6">Llevamos la adminsitracion de tu restaurante al siguiente nivel</p>
-            <p className="text-green-100 font-normal text-xl pb-8">El manejo de tu restaurante no tiene por qué ser difícil, cuando cuentas con una herramienta eficiente, escalable y fácil de usar, lo que resultará en más clientes satisfechos y leales.</p>
+          <div className="pt-[20%] pr-[40%] pl-[5%] relative animate-fade-down animate-duration-[1500ms] animate-delay-1000">
+            <p className="text-white font-semibold text-5xl pb-6">Llevamos la adminsitracion de tu restaurante al siguiente nivel</p>
+            <p className="text-white font-normal text-xl pb-8">El manejo de tu restaurante no tiene por qué ser difícil, cuando cuentas con una herramienta eficiente, escalable y fácil de usar, lo que resultará en más clientes satisfechos y leales.</p>
             <button className="info">
               <span className="circle1"></span>
               <span className="circle2"></span>
@@ -103,18 +105,44 @@ function Home() {
 
 {/* SPOT 3 */}
 
-      <div className="h-full bg-white">
+      <div className="pt-24">
+        <div className="pb-14">
+          <p className="text-4xl px-96 font-medium text-center">Soluciones para la Gestión y
+          Administración de restaurantes</p>
+        </div>
 
-          <div className="py-24">
-            <p className="text-4xl px-96 font-medium text-center">Soluciones para la Gestión y Administración de restaurantes</p>
+        <div className="w-full bg-center h-screen bg-no-repeat" style={{ backgroundImage: `url(${pos2})` }}>
+          <div className="flex flex-col text-right items-end pl-[35%] pr-[5%] pt-[15%]">
+            <p className="text-white font-semibold text-5xl pb-6">Software</p>
+            <p className="text-white font-normal text-xl pb-8">Ofrecemos una solución completa para el sector de restaurantes que se adapta a cualquier tamaño y/o tipo de restaurante desde la operación de tu negocio hasta la fidelización de tus clientes</p>
+            <button className="info">
+                <span className="circle1"></span>
+                <span className="circle2"></span>
+                <span className="circle3"></span>
+                <span className="circle4"></span>
+                <span className="circle5"></span>
+                <span className="text">Más información</span>
+              </button>
           </div>
+        </div>
+      </div>
 
-          <div className="w-full bg-cover" style={{ background: `url:(${pos2})` }}>
-            <p>Software</p>
-            <p>Ofrecemos una solución completa para el sector de restaurantes que se adapta a cualquier tamaño y/o tipo de restaurante desde la operación de tu negocio hasta la fidelización de tus clientes</p>
-            <button>Más información</button>
-          </div>
-
+      <div className="w-full grid grid-cols-2 items-center bg-center h-screen bg-no-repeat" style={{ backgroundImage: `url(${pos3})` }}>
+        <div className="flex flex-col items-start pl-[10%]">
+          <p className="text-white font-semibold text-5xl pb-6">Software</p>
+          <p className="text-white font-normal text-xl pb-8">Ofrecemos una solución completa para el sector de restaurantes que se adapta a cualquier tamaño y/o tipo de restaurante desde la operación de tu negocio hasta la fidelización de tus clientes</p>
+          <button className="info">
+              <span className="circle1"></span>
+              <span className="circle2"></span>
+              <span className="circle3"></span>
+              <span className="circle4"></span>
+              <span className="circle5"></span>
+              <span className="text">Más información</span>
+            </button>
+        </div>
+        <div className="flex flex-col items-center">
+          <img src={ncr1} alt={ncr1} className="w-96" />
+        </div>
       </div>
 
     </section>
