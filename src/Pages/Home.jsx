@@ -4,6 +4,8 @@ import fondo1 from '../assets/3.jpg'
 import pos2 from '../assets/pos2.jpg'
 import pos3 from '../assets/6.jpg'
 import ncr1 from '../assets/ncr1.jpg'
+import bg1 from '../assets/7.jpg'
+import bg2 from '../assets/8.jpg'
 import { useEffect, useState } from 'react';
 
 function Home() {
@@ -144,6 +146,32 @@ function Home() {
           <img src={ncr1} alt={ncr1} className="w-96" />
         </div>
       </div>
+
+{/* SPOT 4 */}
+
+    <div className="flex flex-col gap-5 pt-36 pb-12">
+      <p className="text-4xl px-96 font-medium text-center">Servicios profesionales de clase mundial</p>
+      <p className="font-semibold text-center text-3xl text-slate-700 pb-8">Las Marcas líderes en el mundo nos prefieren</p>
+    </div>
+
+    <div className="grid grid-cols-2 px-16 gap-10 w-full">
+      <img src={bg1} alt={bg1} className="rounded-lg" />
+      <img src={bg2} alt={bg2} className="rounded-lg" />
+    </div>
+
+    <div className="grid grid-cols-2 gap-10 px-16 w-full pt-2">
+      <div className="flex flex-row justify-center gap-1">
+        <p className="text-green-600 font-semibold text-xl">34 de las 50</p>
+        <p className="font-semibold text-xl">cadenas top en el mundo de</p>
+        <p className="text-green-600 font-semibold text-xl">comida rápida</p>
+      </div>
+
+      <div className="flex flex-row justify-center gap-1">
+        <p className="text-green-600 font-semibold text-xl">27 de las 50</p>
+        <p className=" font-semibold text-xl">cadenas top en el mundo de</p>
+        <p className="text-green-600 font-semibold text-xl">servicio en la mesa</p>
+      </div>
+    </div>
 
     </section>
   )
