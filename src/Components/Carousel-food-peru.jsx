@@ -38,7 +38,7 @@ const CarouselPeru = () => {
 
     <div className="relative w-full max-w-3xl mx-auto overflow-hidden rounded-lg">
       {/* Contenedor de imágenes */}
-      <div className="flex transition-transform duration-700 ease-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+      <div className="flex transition-transform duration-1000" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
         {images.map((image, index) => (
           <img
           key={index}

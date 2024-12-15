@@ -6,9 +6,11 @@ import pos3 from '../assets/6.jpg'
 import ncr1 from '../assets/ncr1.jpg'
 import bg1 from '../assets/7.jpg'
 import bg2 from '../assets/8.jpg'
+import piepag from '../assets/1.jpg'
 import { useEffect, useState } from 'react';
 import Carousel from '../Components/Carousel-food'
 import CarouselPeru from '../Components/Carousel-food-peru'
+import Footer from '../Components/Footer'
 
 function Home() {
 
@@ -41,22 +43,22 @@ function Home() {
           <img src={logoInt} alt={logoInt} className={` transition-all duration-300 ${isScrolled ? "w-32" : "w-48"}`} />
         </div>
         <div className="font-semibold flex gap-12 items-center">
-          <button className="relative group">Inicio
+          <a href="" className="relative group">Inicio
           <span className="absolute left-0 bottom-0 w-0 h-1 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
-          </button>
-          <button className="relative group">Nosotros
+          </a>
+          <a href="" className="relative group">Nosotros
           <span className="absolute left-0 bottom-0 w-0 h-1 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
-          </button>
-          <button className="relative group">Productos
+          </a>
+          <a href="" className="relative group">Productos
           <span className="absolute left-0 bottom-0 w-0 h-1 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
-          </button>
-          <button className="relative group">Soluciones
+          </a>
+          <a href="" className="relative group">Soluciones
           <span className="absolute left-0 bottom-0 w-0 h-1 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
-          </button>
-          <button className="relative group">Clientes
+          </a>
+          <a href="" className="relative group">Clientes
           <span className="absolute left-0 bottom-0 w-0 h-1 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
-          </button>
-          <button className="contact"><span className="contact-content">Contactanos</span></button>
+          </a>
+          <a href="" className="contact"><span className="contact-content">Contactanos</span></a>
         </div>
       </div>
 
@@ -254,7 +256,11 @@ function Home() {
       </div>
     </div>
 
-    
+{/* FOOTER */}
+
+    <div className="pt-32">
+      <Footer />
+    </div>
 
     </section>
 
