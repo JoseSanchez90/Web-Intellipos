@@ -174,7 +174,9 @@ function Home() {
       </div>
     </div>
 
-    <div className="h-full pt-20 flex flex-col items-center justify-center">
+{/* CAROUSEL DE LAS MARCAS */}
+
+    <div className="h-full pt-32 flex flex-col items-center justify-center">
       <Carousel />
     </div>
 
