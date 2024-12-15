@@ -1,13 +1,18 @@
 import React, { useState, useEffect } from 'react'
-import kfc from '../assets/kfc-logo.jpg'
-import dunkin from '../assets/dd-logo.jpg'
-import chilis from '../assets/chilis-logo.jpg'
-import friday from '../assets/friday-logo.jpg'
-import bk from '../assets/bk-logo.jpg'
+import ajiles from '../assets/ajiles-logo.png'
+import palermo from '../assets/palermo-logo.png'
+import peruanito from '../assets/peruanito-logo.jpg'
+import rocket from '../assets/jr-logo.png'
+import cec from '../assets/Chuck-e-Cheeses-Logo.png'
+import ihop from '../assets/ihop-logo.png'
+import apb from '../assets/applebees-logo.png'
+import taco from '../assets/taco-logo.png'
+import tada from '../assets/tada-logo.png'
 
-const images = [kfc, dunkin, chilis, friday, bk];
 
-const Carousel = () => {
+const images = [ajiles, palermo, peruanito, rocket, cec, ihop, apb, taco, tada];
+
+const CarouselPeru = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Función para pasar a la siguiente imagen
@@ -39,7 +44,7 @@ const Carousel = () => {
           key={index}
           src={image}
           alt={`Slide ${index}`}
-          className="w-full h-80 object-contain flex-shrink-0"
+          className="w-full h-80 object-contain flex-shrink-0 "
         />
         ))}
       </div>
@@ -63,4 +68,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default CarouselPeru;
