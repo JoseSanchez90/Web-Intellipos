@@ -7,6 +7,7 @@ import ncr1 from '../assets/ncr1.jpg'
 import bg1 from '../assets/7.jpg'
 import bg2 from '../assets/8.jpg'
 import { useEffect, useState } from 'react';
+import Carousel from '../Components/Carousel-food'
 
 function Home() {
 
@@ -171,6 +172,10 @@ function Home() {
         <p className=" font-semibold text-xl">cadenas top en el mundo de</p>
         <p className="text-green-600 font-semibold text-xl">servicio en la mesa</p>
       </div>
+    </div>
+
+    <div className="h-full pt-20 flex flex-col items-center justify-center">
+      <Carousel />
     </div>
 
     </section>
