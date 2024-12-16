@@ -1,4 +1,3 @@
-import logoInt from '../assets/intelliposlogo.png'
 import '../Css/Home.css'
 import fondo1 from '../assets/3.jpg'
 import pos2 from '../assets/pos2.jpg'
@@ -6,30 +5,17 @@ import pos3 from '../assets/6.jpg'
 import ncr1 from '../assets/ncr1.jpg'
 import bg1 from '../assets/7.jpg'
 import bg2 from '../assets/8.jpg'
-import piepag from '../assets/1.jpg'
-import { useEffect, useState } from 'react';
+import logo from '../assets/intelliposlogo.png'
 import Carousel from '../Components/Carousel-food'
 import CarouselPeru from '../Components/Carousel-food-peru'
 import Footer from '../Components/Footer'
+import Navbar from '../Components/Navbar'
+import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 
 function Home() {
 
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     
@@ -37,44 +23,47 @@ function Home() {
 
     <div className="bg-center h-screen bg-cover" style={{ backgroundImage: `url(${fondo1})` }}>
 
-      <div className= {`w-[100%] fixed top-0 z-10 flex flex-row justify-between items-center bg-white transition-all duration-300 ${
-        isScrolled ? "shadow-lg rounded-b-3xl bg-white px-20 py-4 text-sm" : "px-10 py-8 text-base"}`}>
-        <div>
-          <img src={logoInt} alt={logoInt} className={` transition-all duration-300 ${isScrolled ? "w-32" : "w-48"}`} />
-        </div>
-        <div className="font-semibold flex gap-12 items-center">
-          <a href="" className="relative group">Inicio
-          <span className="absolute left-0 bottom-0 w-0 h-1 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
-          </a>
-          <a href="" className="relative group">Nosotros
-          <span className="absolute left-0 bottom-0 w-0 h-1 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
-          </a>
-          <a href="" className="relative group">Productos
-          <span className="absolute left-0 bottom-0 w-0 h-1 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
-          </a>
-          <a href="" className="relative group">Soluciones
-          <span className="absolute left-0 bottom-0 w-0 h-1 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
-          </a>
-          <a href="" className="relative group">Clientes
-          <span className="absolute left-0 bottom-0 w-0 h-1 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
-          </a>
-          <a href="" className="contact"><span className="contact-content">Contactanos</span></a>
-        </div>
+{/* NAVBAR MOBILE */}
+
+      <div className="lg:hidden">
+
+        <div className="py-7 px-7 bg-white flex justify-between">
+
+          <img src={logo} alt={logo} className="w-32" />
+        
+          <button onClick={() => setIsOpen(!isOpen)} className="flex items-center animate-fade-down" tabIndex="0">
+            <svg fill="#2dd100" height="32px" width="32px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M217.043,0.001H16.696C7.515,0.001,0,7.479,0,16.697v200.348c0,9.214,7.482,16.693,16.696,16.693h200.348 c9.214,0,16.696-7.481,16.696-16.693V16.697C233.739,7.479,226.224,0.001,217.043,0.001z"></path> </g> </g> <g> <g> <path d="M495.304,0.001H294.957c-9.18,0-16.696,7.477-16.696,16.696v200.348c0,9.214,7.482,16.693,16.696,16.693h200.348 c9.214,0,16.696-7.481,16.696-16.693V16.697C512,7.479,504.485,0.001,495.304,0.001z"></path> </g> </g> <g> <g> <path d="M217.043,278.262H16.696C7.515,278.262,0,285.739,0,294.958v200.348c0,9.214,7.482,16.693,16.696,16.693h200.348 c9.214,0,16.696-7.481,16.696-16.693V294.958C233.739,285.739,226.224,278.262,217.043,278.262z"></path> </g> </g> <g> <g> <path d="M495.304,278.262H294.957c-9.18,0-16.696,7.477-16.696,16.696v200.348c0,9.214,7.482,16.693,16.696,16.693h200.348 c9.214,0,16.696-7.481,16.696-16.693V294.958C512,285.739,504.485,278.262,495.304,278.262z"></path> </g> </g> </g></svg>
+          </button>
+
+            {isOpen && (
+              <div className="absolute z-50 flex flex-col w-1/3 sm:w-1/4 items-start right-5 text-white font-bold mt-10 bg-green-800 rounded-md shadow-lg animate-fade-down">
+                <NavLink to="/" className="dropdown-item text-sm hover:text-gray-900 py-2 px-4">Inicio</NavLink>
+                <NavLink to="/About" className="dropdown-item text-sm hover:text-gray-900 py-2 px-4">Nostroso</NavLink>
+                <a tabIndex="-1" href="#proyectos" className="dropdown-item text-sm hover:text-gray-900 py-2 px-4">Proyectos</a>
+                <a tabIndex="-1" href="#footer" className="dropdown-item text-sm hover:text-gray-900 py-2 px-4">Contacto</a>
+              </div>
+            )}
+          </div>
+
       </div>
 
-      
+{/* NAVBAR       */}
+
+        <Navbar />
+
+{/* SPOT 1 */}
         
         <div className="h-screen w-full">
-          <div className="pt-[20%] pr-[40%] pl-[5%] relative animate-fade-down animate-duration-[1500ms] animate-delay-1000">
-            <p className="text-white font-semibold text-5xl pb-6">Llevamos la adminsitracion de tu restaurante al siguiente nivel</p>
-            <p className="text-white font-normal text-xl pb-8">El manejo de tu restaurante no tiene por qué ser difícil, cuando cuentas con una herramienta eficiente, escalable y fácil de usar, lo que resultará en más clientes satisfechos y leales.</p>
+          <div className="pt-[20%] px-8 md:pt-[20%] md:pr-[40%] md:pl-[5%] relative animate-fade-down animate-duration-[1500ms] animate-delay-1000">
+            <p className="text-white font-semibold text-xl md:text-5xl 2xl:text-5xl pb-6">Llevamos la adminsitracion de tu restaurante al siguiente nivel</p>
+            <p className="text-white font-normal text-sm md:text-xl pb-8">El manejo de tu restaurante no tiene por qué ser difícil, cuando cuentas con una herramienta eficiente, escalable y fácil de usar, lo que resultará en más clientes satisfechos y leales.</p>
             <button className="info">
               <span className="circle1"></span>
               <span className="circle2"></span>
               <span className="circle3"></span>
               <span className="circle4"></span>
               <span className="circle5"></span>
-              <span className="text">Solicitar mayor información</span>
+              <span className="text-sm md:text-lg">Solicitar mayor información</span>
             </button>
           </div>
         </div>
@@ -84,9 +73,9 @@ function Home() {
 {/* SPOT 2 */}
 
       <div className="h-full w-full bg-white">
-        <div className="flex flex-col items-center py-28">
-          <div className="py-24">
-            <p className="text-4xl px-96 font-medium text-center">Tenemos la solución que se adapta al formato, al tamaño y al presupuesto de tu negocio</p>
+        <div className="flex flex-col items-center md:py-10 2xl:py-24">
+          <div className="md:py-16 2xl:py-20">
+            <p className="text-4xl md:px-60 2xl:px-96 font-medium text-center">Tenemos la solución que se adapta al formato, al tamaño y al presupuesto de tu negocio</p>
           </div>
           <div className="grid grid-cols-4 px-48 gap-5">
             <div className="flex flex-col items-center place-content-center border-2 border-green-600 rounded-lg mx-18 p-5 gap-4">
@@ -112,7 +101,7 @@ function Home() {
 {/* SPOT 3 */}
 
       <div className="pt-24">
-        <div className="pb-14">
+        <div className="md:pb-10 2xl:pb-14">
           <p className="text-4xl px-96 font-medium text-center">Soluciones para la Gestión y
           Administración de restaurantes</p>
         </div>
@@ -153,7 +142,7 @@ function Home() {
 
 {/* SPOT 4 */}
 
-    <div className="flex flex-col gap-5 pt-36 pb-12">
+    <div className="flex flex-col gap-5 md:pt-24 2xl:pt-36 pb-12">
       <p className="text-4xl px-96 font-medium text-center">Servicios profesionales de clase mundial</p>
       <p className="font-semibold text-center text-3xl text-slate-700 pb-8">Las Marcas líderes en el mundo nos prefieren</p>
     </div>
@@ -163,23 +152,19 @@ function Home() {
       <img src={bg2} alt={bg2} className="rounded-lg" />
     </div>
 
-    <div className="grid grid-cols-2 gap-10 px-16 w-full pt-4">
-      <div className="flex flex-row justify-center gap-2">
-        <p className="text-green-600 font-semibold text-2xl">34 de las 50</p>
-        <p className="font-semibold text-2xl">cadenas top en el mundo de</p>
-        <p className="text-green-600 font-semibold text-2xl">comida rápida</p>
+    <div className="grid grid-cols-2 px-10 2xl:px-16 w-full pt-2 2xl:pt-4">
+      <div className="flex flex-row justify-center px-16 text-center">
+        <p className="text-green-600 font-semibold text-2xl">34 de las 50 cadenas top en el mundo de comida rápida</p>
       </div>
 
-      <div className="flex flex-row justify-center gap-2">
-        <p className="text-green-600 font-semibold text-2xl">27 de las 50</p>
-        <p className=" font-semibold text-2xl">cadenas top en el mundo de</p>
-        <p className="text-green-600 font-semibold text-2xl">servicio en la mesa</p>
+      <div className="flex flex-row justify-center gap-2 px-16 text-center">
+        <p className="text-green-600 font-semibold text-2xl">27 de las 50 cadenas top en el mundo de servicio en la mesa</p>
       </div>
     </div>
 
 {/* CAROUSEL DE LAS MARCAS MUNDIAL */}
 
-    <div className="pt-48">
+    <div className="pt-40">
       <div className="">
         <p className="text-5xl text-teal-800 px-96 font-semibold text-center">Marcas a nivel mundial</p>
       </div>
@@ -187,6 +172,18 @@ function Home() {
 
     <div className="h-full pt-16 flex flex-col items-center justify-center">
       <Carousel />
+    </div>
+
+{/* CAROUSEL DE LAS MARCAS */}
+
+    <div className="pt-36">
+      <div className="">
+         <p className="text-5xl text-teal-800 px-96 font-semibold text-center">Marcas actualmente en el Perú</p>
+      </div>
+
+      <div className="h-full pt-16 flex flex-col items-center justify-center">
+      <CarouselPeru />
+      </div>
     </div>
 
 {/* SPOT 5 */}
@@ -241,18 +238,6 @@ function Home() {
             <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6.27126 16C4.31103 14.7751 3 12.5463 3 10C3 6.13401 6.02208 3 9.75 3C13.1779 3 16.009 5.64982 16.4425 9.08201C16.4575 9.20119 16.5708 9.28382 16.6895 9.26537C16.8724 9.23695 17.0595 9.22222 17.25 9.22222C19.3211 9.22222 21 10.9633 21 13.1111C21 14.2576 20.5216 15.2882 19.7605 16" stroke="#fff" stroke-width="2" stroke-linecap="round"></path> <path d="M13 20.5V13" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M10 18L12.6833 20.6833V20.6833C12.8582 20.8582 13.1418 20.8582 13.3167 20.6833V20.6833L16 18" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
           </div>
         </div>
-      </div>
-    </div>
-
-{/* CAROUSEL DE LAS MARCAS */}
-
-    <div className="pt-36">
-      <div className="">
-         <p className="text-5xl text-teal-800 px-96 font-semibold text-center">Marcas actualmente en el Perú</p>
-      </div>
-
-      <div className="h-full pt-16 flex flex-col items-center justify-center">
-      <CarouselPeru />
       </div>
     </div>
 
