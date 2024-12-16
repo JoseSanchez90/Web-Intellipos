@@ -53,7 +53,7 @@ function Home() {
 
 {/* SPOT 1 */}
         
-        <div className="h-screen w-full">
+        <div className="h-full w-full">
           <div className="pt-[20%] px-8 md:pt-[20%] md:pr-[40%] md:pl-[5%] relative animate-fade-down animate-duration-[1500ms] animate-delay-1000">
             <p className="text-white font-semibold text-xl md:text-5xl 2xl:text-5xl pb-6">Llevamos la adminsitracion de tu restaurante al siguiente nivel</p>
             <p className="text-white font-normal text-sm md:text-xl pb-8">El manejo de tu restaurante no tiene por qué ser difícil, cuando cuentas con una herramienta eficiente, escalable y fácil de usar, lo que resultará en más clientes satisfechos y leales.</p>
@@ -73,11 +73,11 @@ function Home() {
 {/* SPOT 2 */}
 
       <div className="h-full w-full bg-white">
-        <div className="flex flex-col items-center md:py-10 2xl:py-24">
-          <div className="md:py-16 2xl:py-20">
-            <p className="text-4xl md:px-60 2xl:px-96 font-medium text-center">Tenemos la solución que se adapta al formato, al tamaño y al presupuesto de tu negocio</p>
+        <div className="flex flex-col items-center py-8 md:py-10 2xl:py-24">
+          <div className="py-10 md:py-16 2xl:py-20">
+            <p className="text-xl md:text-4xl px-10 md:px-60 2xl:px-96 font-semibold md:font-medium text-center">Tenemos la solución que se adapta al formato, al tamaño y al presupuesto de tu negocio</p>
           </div>
-          <div className="grid grid-cols-4 px-48 gap-5">
+          <div className="grid grid-cols-2 md:grid-cols-4 px-10 gap-2 md:px-48 md:gap-5">
             <div className="flex flex-col items-center place-content-center border-2 border-green-600 rounded-lg mx-18 p-5 gap-4">
               <svg width="64px" height="64px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke="#000000" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M54.89,26.73A23.52,23.52,0,0,1,15.6,49" stroke-linecap="round"></path><path d="M9,37.17a23.75,23.75,0,0,1-.53-5A23.51,23.51,0,0,1,48.3,15.2" stroke-linecap="round"></path><polyline points="37.73 16.24 48.62 15.44 47.77 5.24" stroke-linecap="round"></polyline><polyline points="25.91 47.76 15.03 48.56 15.88 58.76" stroke-linecap="round"></polyline></g></svg>
               <p className="text-base font-normal text-center">Cubrimos el ciclo completo de su operación</p>
@@ -100,16 +100,16 @@ function Home() {
 
 {/* SPOT 3 */}
 
-      <div className="pt-24">
-        <div className="md:pb-10 2xl:pb-14">
-          <p className="text-4xl px-96 font-medium text-center">Soluciones para la Gestión y
+      <div className="md:pt-24">
+        <div className="pt-8 md:py-16 2xl:py-20">
+          <p className="text-xl md:text-4xl px-10 md:px-60 2xl:px-96 font-semibold md:font-medium text-center">Soluciones para la Gestión y
           Administración de restaurantes</p>
         </div>
 
         <div className="w-full bg-center h-screen bg-no-repeat" style={{ backgroundImage: `url(${pos2})` }}>
-          <div className="flex flex-col text-right items-end pl-[35%] pr-[5%] pt-[15%]">
-            <p className="text-white font-semibold text-5xl pb-6">Software</p>
-            <p className="text-white font-normal text-xl pb-8">Ofrecemos una solución completa para el sector de restaurantes que se adapta a cualquier tamaño y/o tipo de restaurante desde la operación de tu negocio hasta la fidelización de tus clientes</p>
+          <div className="flex flex-col text-right items-end pl-10% md:pl-[35%] pr-[5%] pt-[40%] md:pt-[15%]">
+            <p className="text-white font-semibold text-4xl md:text-5xl pb-6">Software</p>
+            <p className="text-white font-normal text-lg md:text-xl pb-8">Ofrecemos una solución completa para el sector de restaurantes que se adapta a cualquier tamaño y/o tipo de restaurante desde la operación de tu negocio hasta la fidelización de tus clientes</p>
             <button className="info">
                 <span className="circle1"></span>
                 <span className="circle2"></span>
@@ -122,10 +122,10 @@ function Home() {
         </div>
       </div>
 
-      <div className="w-full grid grid-cols-2 items-center bg-center h-screen bg-no-repeat" style={{ backgroundImage: `url(${pos3})` }}>
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 items-center bg-center h-screen bg-no-repeat" style={{ backgroundImage: `url(${pos3})` }}>
         <div className="flex flex-col items-start pl-[10%]">
-          <p className="text-white font-semibold text-5xl pb-6">Software</p>
-          <p className="text-white font-normal text-xl pb-8">Ofrecemos una solución completa para el sector de restaurantes que se adapta a cualquier tamaño y/o tipo de restaurante desde la operación de tu negocio hasta la fidelización de tus clientes</p>
+          <p className="text-white font-semibold text-4xl md:text-5xl pb-6">Equipamiento</p>
+          <p className="text-white font-normal text-lg md:text-xl pb-8">Contamos con una línea completa de equipos, diseñador especial mente para operar en el exigente ambiente de restaurantes</p>
           <button className="info">
               <span className="circle1"></span>
               <span className="circle2"></span>
@@ -136,14 +136,14 @@ function Home() {
             </button>
         </div>
         <div className="flex flex-col items-center">
-          <img src={ncr1} alt={ncr1} className="w-96" />
+          <img src={ncr1} alt={ncr1} className="w-52 md:w-96" />
         </div>
       </div>
 
 {/* SPOT 4 */}
 
     <div className="flex flex-col gap-5 md:pt-24 2xl:pt-36 pb-12">
-      <p className="text-4xl px-96 font-medium text-center">Servicios profesionales de clase mundial</p>
+      <p className="text-4xl md:px-60 2xl:px-96 font-medium text-center">Servicios profesionales de clase mundial</p>
       <p className="font-semibold text-center text-3xl text-slate-700 pb-8">Las Marcas líderes en el mundo nos prefieren</p>
     </div>
 
@@ -166,7 +166,7 @@ function Home() {
 
     <div className="pt-40">
       <div className="">
-        <p className="text-5xl text-teal-800 px-96 font-semibold text-center">Marcas a nivel mundial</p>
+        <p className="text-5xl text-teal-800 md:px-60 2xl:px-96 font-semibold text-center">Marcas a nivel mundial</p>
       </div>
     </div>
 
@@ -178,7 +178,7 @@ function Home() {
 
     <div className="pt-36">
       <div className="">
-         <p className="text-5xl text-teal-800 px-96 font-semibold text-center">Marcas actualmente en el Perú</p>
+         <p className="text-5xl text-teal-800 md:px-60 2xl:px-96 font-semibold text-center">Marcas actualmente en el Perú</p>
       </div>
 
       <div className="h-full pt-16 flex flex-col items-center justify-center">
