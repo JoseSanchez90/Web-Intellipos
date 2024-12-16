@@ -5,17 +5,15 @@ import pos3 from '../assets/6.jpg'
 import ncr1 from '../assets/ncr1.jpg'
 import bg1 from '../assets/7.jpg'
 import bg2 from '../assets/8.jpg'
-import logo from '../assets/intelliposlogo.png'
 import Carousel from '../Components/Carousel-food'
 import CarouselPeru from '../Components/Carousel-food-peru'
 import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'
-import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import NavbarMobile from '../Components/NavbarMobile'
 
 function Home() {
 
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
 
   return (
     
@@ -25,7 +23,9 @@ function Home() {
 
 {/* NAVBAR MOBILE */}
 
-      <div className="lg:hidden">
+<NavbarMobile />
+
+      {/* <div className="lg:hidden">
 
         <div className="py-7 px-7 bg-white flex justify-between">
 
@@ -47,7 +47,7 @@ function Home() {
             )}
           </div>
 
-      </div>
+      </div> */}
 
 {/* NAVBAR       */}
 
@@ -167,7 +167,7 @@ function Home() {
 {/* CAROUSEL DE LAS MARCAS MUNDIAL */}
 
     <div className="pt-20 md:pt-40">
-        <p className="text-3xl md:text-5xl text-teal-800 md:px-60 2xl:px-96 font-semibold text-center">Marcas a nivel mundial</p>
+      <p className="text-3xl md:text-5xl text-teal-800 md:px-60 2xl:px-96 font-semibold text-center">Marcas a nivel mundial</p>
     </div>
 
     <div className="h-full pt-10 md:pt-16 flex flex-col items-center justify-center">
@@ -177,7 +177,7 @@ function Home() {
 {/* CAROUSEL DE LAS MARCAS */}
 
     <div className="pt-20 md:pt-40">
-         <p className="text-3xl md:text-5xl text-teal-800 md:px-60 2xl:px-96 font-semibold text-center">Marcas actualmente en el Perú</p>
+      <p className="text-3xl md:text-5xl text-teal-800 px-2 md:px-60 2xl:px-96 font-semibold text-center">Marcas actualmente en el Perú</p>
 
       <div className="h-full pt-10 md:pt-16 flex flex-col items-center justify-center">
       <CarouselPeru />
