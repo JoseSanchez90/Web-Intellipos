@@ -39,22 +39,19 @@ const Carousel = () => {
           key={index}
           src={image}
           alt={`Slide ${index}`}
-          className="w-full h-80 object-contain flex-shrink-0"
+          className="w-full h-32 md:h-80 object-contain flex-shrink-0"
         />
         ))}
       </div>
 
       {/* Botones de navegación */}
-      <button
-        className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-4 py-2 rounded-full hover:bg-opacity-75"
-        onClick={prevSlide}
-      >
+      <button className="absolute top-1/2 left-5 md:left-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-4 py-2 rounded-full hover:bg-opacity-75"
+        onClick={prevSlide}>
         &#10094;
       </button>
-      <button
-        className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-4 py-2 rounded-full hover:bg-opacity-75"
-        onClick={nextSlide}
-      >
+
+      <button className="absolute top-1/2 right-5 md:right-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-4 py-2 rounded-full hover:bg-opacity-75"
+        onClick={nextSlide}>
         &#10095;
       </button>
 
