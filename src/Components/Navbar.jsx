@@ -1,19 +1,21 @@
 import React, { useEffect, useState } from 'react'
 import logoInt from '../assets/intelliposlogo.png'
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 function Navbar() {
 
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const handleScrollToTop = () => {
-    setTimeout(() => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    }, 100); // Agrega un pequeño retraso
-  };
+  const location = useLocation();
+
+  useEffect(() => {
+    // Hace scroll al inicio cada vez que la ruta cambia (inicio, nosotros, productos, soluciones, clientes, contactenos)
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [location]);
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -50,7 +52,6 @@ function Navbar() {
     <div className="font-semibold flex gap-12 items-center">
       <NavLink
         to="/"
-        onClick={handleScrollToTop}
         className={({ isActive }) =>
           isActive ? ActiveLink : InactiveLink
         }
@@ -60,8 +61,7 @@ function Navbar() {
       </NavLink>
 
       <NavLink
-        to="/Nosotros"
-        onClick={handleScrollToTop}
+        to="/nosotros"
         className={({ isActive }) =>
           isActive ? ActiveLink : InactiveLink
         }
@@ -71,8 +71,7 @@ function Navbar() {
       </NavLink>
 
       <NavLink
-        to="/Productos"
-        onClick={handleScrollToTop}
+        to="/productos"
         className={({ isActive }) =>
           isActive ? ActiveLink : InactiveLink
         }
@@ -82,8 +81,7 @@ function Navbar() {
       </NavLink>
 
       <NavLink
-        to="/Soluciones"
-        onClick={handleScrollToTop}
+        to="/soluciones"
         className={({ isActive }) =>
           isActive ? ActiveLink : InactiveLink
         }
@@ -93,8 +91,7 @@ function Navbar() {
       </NavLink>
 
       <NavLink
-        to="/Clientes"
-        onClick={handleScrollToTop}
+        to="/clientes"
         className={({ isActive }) =>
           isActive ? ActiveLink : InactiveLink
         }
@@ -104,8 +101,7 @@ function Navbar() {
       </NavLink>
 
       <NavLink
-        to="/Contacto"
-        onClick={handleScrollToTop}
+        to="/contacto"
         className="contact"
       >
         <span className="contact-content">Contactanos</span>
