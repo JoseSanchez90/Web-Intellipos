@@ -21,6 +21,12 @@ function Navbar() {
     };
   }, []);
 
+  const ActiveLink = "text-green-500 font-bold"
+  const InactiveLink = "relative group font-bold"
+
+  const ActiveBtnLink = "ContactActive"
+  const InactiveBtnLink = "contact contact-content"
+
   return (
     
           <div className= {`hidden w-[100%] fixed top-0 z-10 md:flex flex-row justify-between items-center bg-white transition-all duration-300 ${
@@ -29,22 +35,27 @@ function Navbar() {
             <img src={logoInt} alt={logoInt} className={` transition-all duration-300 ${isScrolled ? "w-32" : "w-48"}`} />
 
             <div className="font-semibold flex gap-12 items-center">
-              <NavLink to="/" className="relative group">Inicio
+              <NavLink to="/" className={({isActive}) => isActive?ActiveLink:InactiveLink}>Inicio
               <span className="absolute left-0 bottom-0 w-0 h-1 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
               </NavLink>
-              <NavLink to="/Nosotros" className="relative group">Nosotros
+
+              <NavLink to="/Nosotros" className={({isActive}) => isActive?ActiveLink:InactiveLink}>Nosotros
               <span className="absolute left-0 bottom-0 w-0 h-1 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
               </NavLink>
-              <a href="" className="relative group">Productos
+
+              <NavLink to="/Productos" className={({isActive}) => isActive?ActiveLink:InactiveLink}>Productos
               <span className="absolute left-0 bottom-0 w-0 h-1 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
-              </a>
-              <a href="" className="relative group">Soluciones
+              </NavLink>
+
+              <NavLink to="/Soluciones" className={({isActive}) => isActive?ActiveLink:InactiveLink}>Soluciones
               <span className="absolute left-0 bottom-0 w-0 h-1 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
-              </a>
-              <a href="" className="relative group">Clientes
+              </NavLink>
+
+              <NavLink to="/Clientes" className={({isActive}) => isActive?ActiveLink:InactiveLink}>Clientes
               <span className="absolute left-0 bottom-0 w-0 h-1 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
-              </a>
-              <a href="" className="contact"><span className="contact-content">Contactanos</span></a>
+              </NavLink>
+              
+              <NavLink to="/Contacto" className="contact"><span className="contact-content">Contactanos</span></NavLink>
             </div>
 
           </div>

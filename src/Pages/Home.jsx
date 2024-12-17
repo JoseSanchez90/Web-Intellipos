@@ -7,25 +7,19 @@ import bg1 from '../assets/7.jpg'
 import bg2 from '../assets/8.jpg'
 import Carousel from '../Components/Carousel-food'
 import CarouselPeru from '../Components/Carousel-food-peru'
-import Footer from '../Components/Footer'
-import Navbar from '../Components/Navbar'
 import NavbarMobile from '../Components/NavbarMobile'
 
 function Home() {
 
   return (
     
-    <section className="h-full w-full outfit-letters">
+    <div className="h-full w-full">
 
     <div className="bg-center h-screen bg-cover" style={{ backgroundImage: `url(${fondo1})` }}>
 
 {/* NAVBAR MOBILE */}
 
-<NavbarMobile />
-
-{/* NAVBAR       */}
-
-        <Navbar />
+    <NavbarMobile />     
 
 {/* SPOT 1 */}
         
@@ -161,7 +155,7 @@ function Home() {
 
 {/* SPOT 5 */}
 
-    <div className="pt-32">
+    <div className="py-32">
       <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-5 px-2 md:px-40 py-2">
 
         <div className="bg-blue-500 flex flex-col gap-5 py-4 items-center text-center md:justify-between md:py-6 rounded-xl">
@@ -216,11 +210,11 @@ function Home() {
 
 {/* FOOTER */}
 
-    <div className="pt-16 md:pt-32">
+    {/* <div className="pt-16 md:pt-32">
       <Footer />
-    </div>
+    </div> */}
 
-    </section>
+    </div>
 
   )
 }

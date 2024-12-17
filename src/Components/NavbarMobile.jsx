@@ -56,7 +56,7 @@ useEffect(() => {
             <div ref={menuRef} className={`absolute z-50 grid grid-cols-2 items-end right-5 text-white font-bold mt-10 py-2 px-2 gap-4 bg-green-600 shadow-lg shadow-slate-800 animate-flip-down animate-duration-1000 ${isScrolled ? "w-56 left-[23%] grid grid-cols-2 py-2 px-2 justify-items-start gap-1" : "text-end"}`}>
               <div className="flex flex-col">
                 <NavLink to="/" className="dropdown-item text-sm hover:bg-green-700 py-1 p-2 w-full">Inicio</NavLink>
-                <NavLink to="/About" className="dropdown-item text-sm hover:bg-green-700 py-1 p-2 w-full">Nosotros</NavLink>
+                <NavLink to="/Nosotros" className="dropdown-item text-sm hover:bg-green-700 py-1 p-2 w-full">Nosotros</NavLink>
                 <a tabIndex="-1" href="#proyectos" className="dropdown-item text-sm hover:bg-green-700 py-1 p-2 w-full">Productos</a>
               </div>
               <div className="flex flex-col">

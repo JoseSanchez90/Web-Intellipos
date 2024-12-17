@@ -101,3 +101,73 @@
     );
     transition: all 0.475s;
   }
+
+    /* Boton contactenos Active*/
+
+  .contactActive {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: linear-gradient(
+      82.3deg,
+      rgb(0, 171, 0) 10%,
+      rgb(0, 232, 0)  90%
+    );
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+/* Fondo para Cards */
+
+.about-bg1 {
+  background: linear-gradient(
+    60deg,
+    #001692 55%,
+    #000457 35%
+  );
+}
+
+.about-bg2 {
+  background: linear-gradient(
+    60deg,
+    #000457 55%,
+    #001692 35%
+  );
+}
+
+  .about-bg {
+    background: linear-gradient(
+      60deg,
+      #00920a 55%,
+      #005706 35%
+    );
+  }
+  .about-bg-2 {
+    background: linear-gradient(
+      60deg,
+      #005706 55%,
+      #00920a 35%
+    );
+  }
+
+  .about-bg-3 {
+    background: linear-gradient(
+      60deg,
+      #005706 80%,
+      #00920a 10%
+    );
+  }
+
+  .about-bg-4 {
+    background: linear-gradient(
+      60deg,
+      #00920a 80%,
+      #005706 10%
+    );
+  }
