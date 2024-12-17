@@ -8,6 +8,7 @@ import bk from '../assets/bk-logo.jpg'
 const images = [kfc, dunkin, chilis, friday, bk];
 
 const Carousel = () => {
+  
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Función para pasar a la siguiente imagen

@@ -22,9 +22,9 @@ function About() {
 
 {/* SPOT 1 */}
 
-            <div className="h-full grid grid-cols-2 items-center px-20 2xl:px-10 animate-fade-down animate-duration-[1000ms] animate-delay-500">
-              <p className="text-white font-semibold text-3xl px-10 pb-32">Somos IntelliPOS, representantes de la Corporación NCR para su solución de restaurantes ALOHA</p>
-              <p className="text-white font-semibold text-3xl px-10 pt-40">Aloha cubre el ciclo completo de operaciones y gestión del sector de restaurantes, está es una solución global instalada en más de 100,000 restaurantes</p>
+            <div className="h-full flex flex-col justify-start py-48 gap-20 md:grid md:grid-cols-2 items-center px-2 2xl:px-10 animate-fade-down animate-duration-[1000ms] animate-delay-500">
+              <p className="text-white font-normal md:font-semibold text-lg md:text-2xl px-2 md:px-10 md:pb-32">Somos IntelliPOS, representantes de la Corporación NCR para su solución de restaurantes ALOHA</p>
+              <p className="text-white font-normal md:font-semibold text-lg md:text-2xl px-2 md:px-10 md:pt-40">Aloha cubre el ciclo completo de operaciones y gestión del sector de restaurantes, está es una solución global instalada en más de 100,000 restaurantes</p>
             </div>
 
       </div>
@@ -33,76 +33,77 @@ function About() {
 
       <div className="bg-cover h-full bg-center bg-no-repeat" style={{ backgroundImage: `url(${aboutbg})`}}>
 
-          <div className="grid grid-cols-1 pt-10 px-20">
+          <div className="grid grid-cols-1 pt-5 md:px-20">
             
-            <p className="font-bold text-3xl px-20 text-center py-20 text-green-950">Nuestro objetivo principal es la de satisfacer las necesidades de nuestros clientes con los productos y servicios de clase mundial, siendo el soporte de post-venta la pieza clave para la continuidad en las operaciones cotidianas del negocio-restaurante</p>
+            <p className="font-medium md:font-bold text-lg md:text-3xl px-2 md:px-20 text-center py-10 md:py-20 text-green-950">Nuestro objetivo principal es la de satisfacer las necesidades de nuestros clientes con los productos y servicios de clase mundial, siendo el soporte de post-venta la pieza clave para la continuidad en las operaciones cotidianas del negocio-restaurante</p>
 
-            <div className="grid grid-cols-2 gap-10 px-48">
+            <div className="flex flex-col gap-5 md:grid md:grid-cols-2 md:gap-10 px-12 md:px-48">
 
-              <div className="text-white about-bg1 flex flex-col gap-4 px-6 py-8 text-center hover:scale-95 transition duration-300">
-                <p className="text-xl font-semibold">MISIÓN</p>
-                <p className="text-base font-normal">Convertirnos en el socio tecnológico de nuestros clientes, permitiéndoles brindar servicios eficientes y de calidad</p>
+              <div className="h-40 md:h-full text-white about-bg1 flex flex-col gap-2 md:gap-4 px-4 md:px-6 py-6 md:py-10 text-center rounded-lg md:hover:scale-95 transition duration-150">
+                <p className="text-base md:text-xl font-normal md:font-semibold">MISIÓN</p>
+                <p className="text-sm md:text-base font-light md:font-normal">Convertirnos en el socio tecnológico de nuestros clientes, permitiéndoles brindar servicios eficientes y de calidad</p>
               </div>
-              <div className="text-white about-bg2 flex flex-col gap-4 px-6 py-8 text-center hover:scale-95 transition duration-300">
-                <p className="text-xl font-semibold">VISIÓN</p>
-                <p className="text-base font-normal">Ser reconocidos en el mercado nacional como la empresa que brinda los mejores productos tecnológicos en el sector, ofreciendo servicios de implantación, soporte y post venta de clase mundial</p>
+              <div className="h-40 md:h-full text-white about-bg2 flex flex-col gap-2 md:gap-4 px-4 md:px-6 py-6 md:py-10 text-center rounded-lg md:hover:scale-95 transition duration-150">
+                <p className="text-base md:text-xl font-normal md:font-semibold">VISIÓN</p>
+                <p className="text-sm md:text-base font-light md:font-normal">Ser reconocidos en el mercado nacional como la empresa que brinda el mejor producto, ofreciendo un servicio y soporte de clase mundial</p>
               </div>
 
             </div>
+
           </div>
 
       </div>
 
 {/* SPOT 3 */}
 
-      <div className="bg-cover h-full bg-center bg-no-repeat pb-40" style={{ backgroundImage: `url(${aboutbg2})`}}>
+      <div className="bg-cover h-full bg-center bg-no-repeat md:pb-40" style={{ backgroundImage: `url(${aboutbg2})`}}>
 
-        <div className="grid grid-cols-1 pt-20 px-40">
+        <div className="grid grid-cols-1 py-12 md:py-0 md:pt-20 md:px-40">
           
-          <p className="font-bold text-3xl text-green-950 px-32 text-center py-10">NUESTROS VALORES</p>
+          <p className="font-medium md:font-bold text-lg md:text-3xl text-green-950 md:px-32 text-center py-5 md:py-10">NUESTROS VALORES</p>
 
-          <div className="grid grid-cols-2 gap-4 px-36">
+          <div className="grid grid-cols-2 gap-1 px-2 md:gap-4 md:px-36">
 
-            <div className="text-white about-bg flex flex-col gap-4 px-6 py-8 text-center hover:scale-95 transition duration-300">
-              <p className="text-xl font-semibold">RESPETO</p>
-              <p className="text-base font-normal">Aceptación y reconocimiento de los valores, puntos de vista y prácticas de nuestros asociados, clientes y proveedores</p>
+            <div className="text-white about-bg flex flex-col gap-1 md:gap-4 px-2 md:px-6 py-4 md:py-8 md:text-center rounded-tl-lg md:hover:scale-95 transition duration-150">
+              <p className="text-base md:text-xl text-center md:font-semibold">RESPETO</p>
+              <p className="text-sm text-center font-light md:font-normal">Aceptación y reconocimiento de los valores, puntos de vista y prácticas de nuestros asociados, clientes y proveedores</p>
             </div>
-            <div className="text-white about-bg-2 flex flex-col gap-4 px-6 py-8 text-center hover:scale-95 transition duration-300">
-              <p className="text-xl font-semibold">CALIDAD</p>
-              <p className="text-base font-normal">Implantar productos y servicios que operen con eficiencia, de acuerdo a sus expectativas y que les permitan potenciar su negocio, creando valor para los clientes y propietarios</p>
+            <div className="text-white about-bg flex flex-col gap-1 md:gap-4 px-2 md:px-6 py-4 md:py-8 md:text-center rounded-tr-lg md:hover:scale-95 transition duration-150">
+              <p className="text-base md:text-xl text-center md:font-semibold">CALIDAD</p>
+              <p className="text-sm text-center font-light md:font-normal">Implantar productos y servicios que operen con eficiencia, de acuerdo a sus expectativas y que les permitan potenciar su negocio, creando valor para los clientes y propietarios</p>
             </div>
-            <div className="text-white about-bg-4 flex flex-col gap-4 px-6 py-8 text-center hover:scale-95 transition duration-300">
-              <p className="text-xl font-semibold">COMPROMISO Y RESPONSABILIDAD</p>
-              <p className="text-base font-normal">Cumplimiento de los acuerdos y condiciones establecidos con los clientes, proveedores y empleados en calidad, contenido, plazos y presupuestoseedores</p>
+            <div className="text-white about-bg flex flex-col gap-1 md:gap-4 px-2 md:px-6 py-4 md:py-8 md:text-center rounded-bl-lg md:hover:scale-95 transition duration-150">
+              <p className="text-base md:text-xl text-center md:font-semibold">COMPROMISO Y RESPONSABILIDAD</p>
+              <p className="text-sm text-center font-light md:font-normal">Cumplimiento de los acuerdos y condiciones establecidos con los clientes, proveedores y empleados en calidad, contenido, plazos y presupuestoseedores</p>
             </div>
-            <div className="text-white about-bg-3 flex flex-col gap-4 px-6 py-8 text-center hover:scale-95 transition duration-300">
-              <p className="text-xl font-semibold">ACTITUD POSITIVA Y DE RESPETO</p>
-              <p className="text-base font-normal">Disposición y ánimos de siempre atender las necesidades de nuestros clientes con altos estándares de calidad</p>
+            <div className="text-white about-bg flex flex-col gap-1 md:gap-4 px-2 md:px-6 py-4 md:py-8 md:text-center rounded-br-lg md:hover:scale-95 transition duration-150">
+              <p className="text-base md:text-xl text-center md:font-semibold">ACTITUD POSITIVA Y DE RESPETO</p>
+              <p className="text-sm text-center font-light md:font-normal">Disposición y ánimos de siempre atender las necesidades de nuestros clientes con altos estándares de calidad</p>
             </div>
 
           </div>
         </div>
 
-        </div>
+      </div>
 
 {/* SPOT 4 */}
 
       <div className="bg-cover h-full bg-center bg-no-repeat" style={{ backgroundImage: `url(${pos})`}}>
 
-        <div className="flex flex-col gap-10 py-28 px-48">
+        <div className="flex flex-col md:gap-10 py-16 md:py-28 md:px-48">
 
           <div>
-            <p className="font-bold text-5xl text-white text-center">Nuestros proveedores</p>
+            <p className="font-medium md:font-bold text-lg md:text-5xl text-white text-center">Nuestros proveedores</p>
           </div>
 
-          <div className="pb-10">
-            <p className="font-semibold text-3xl text-white text-center">Mantenemos sociedad con proveedores que atesoran valores compatibles con nuestra visión de empresa y que se caracterizan por tener larga experiencia y un comportamiento ético ejemplar</p>
+          <div className="py-10">
+            <p className="md:font-semibold md:text-3xl px-2 text-white text-center">Mantenemos sociedad con proveedores que atesoran valores compatibles con nuestra visión de empresa y que se caracterizan por tener larga experiencia y un comportamiento ético ejemplar</p>
           </div>
 
-          <div className="grid grid-cols-3">
-            <img src={aloha} alt={aloha} className="w-64" />
-            <img src={ncr} alt={ncr} className="w-64" />
-            <img src={nstar} alt={nstar} className="w-64" />
+          <div className="flex flex-col md:grid md:grid-cols-3 items-center">
+            <img src={aloha} alt={aloha} className="w-28 py-6" />
+            <img src={ncr} alt={ncr} className="w-28 py-6" />
+            <img src={nstar} alt={nstar} className="w-28 py-6" />
           </div>
 
         </div>
@@ -113,14 +114,14 @@ function About() {
 
       <div className="bg-cover h-full bg-center bg-no-repeat" style={{ backgroundImage: `url(${aboutbg2})`}}>
 
-        <div className="flex flex-col gap-10 py-28 px-48">
+        <div className="flex flex-col gap-5 md:gap-10 py-16 md:py-28 px-2 md:px-48">
 
           <div>
-            <p className="font-bold text-5xl text-center">Nuestros Clientes</p>
+            <p className="font-medium md:font-bold text-lg md:text-5xl text-center">Nuestros Clientes</p>
           </div>
 
-          <div className="pb-10">
-            <p className="font-semibold text-3xl text-center">Estamos totalmente integrados y encauzados con la calidad del servicio y productos entregados a nuestros clientes y nos esforzamos por contribuir a que obtengan valor y los pueda transmitir a sus propios clientes</p>
+          <div className="pb-5 md:pb-10">
+            <p className="md:font-semibold md:text-3xl text-center">Estamos totalmente integrados y encauzados con la calidad del servicio y productos entregados a nuestros clientes y nos esforzamos por contribuir a que obtengan valor y los pueda transmitir a sus propios clientes</p>
           </div>
 
           <CarouselPeru />
