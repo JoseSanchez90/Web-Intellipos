@@ -12,16 +12,16 @@ function App() {
 
   return (
     <>
-      <Navbar></Navbar>
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/Nosotros" element={<About />}></Route>
-        <Route path="/Productos" element={<Products />}></Route>
-        <Route path="/Soluciones" element={<Solutions />}></Route>
-        <Route path="/Clientes" element={<Clients />}></Route>
-        <Route path="/Contacto" element={<Contact />}></Route>
-      </Routes>
-      <Footer />
+      <Navbar />
+        <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/Nosotros" element={<About />}></Route>
+            <Route path="/Productos" element={<Products />}></Route>
+            <Route path="/Soluciones" element={<Solutions />}></Route>
+            <Route path="/Clientes" element={<Clients />}></Route>
+            <Route path="/Contacto" element={<Contact />}></Route>
+        </Routes>
+        <Footer />  
     </>
   )
 }
