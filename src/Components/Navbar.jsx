@@ -7,9 +7,13 @@ function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const handleScrollToTop = () => {
-    window.scrollTo(0, 0); // Hace scroll al inicio
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }, 100); // Agrega un pequeño retraso
   };
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
