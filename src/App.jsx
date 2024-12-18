@@ -7,6 +7,7 @@ import Solutions from './Pages/Solutions'
 import Clients from './Pages/Clients'
 import Contact from './Pages/Contact'
 import Footer from './Components/Footer'
+import NavbarMobile from './Components/NavbarMobile'
 
 function App() {
 
@@ -15,11 +16,11 @@ function App() {
       <Navbar />
         <Routes>
             <Route path="/" element={<Home />}></Route>
-            <Route path="/Nosotros" element={<About />}></Route>
-            <Route path="/Productos" element={<Products />}></Route>
-            <Route path="/Soluciones" element={<Solutions />}></Route>
-            <Route path="/Clientes" element={<Clients />}></Route>
-            <Route path="/Contacto" element={<Contact />}></Route>
+            <Route path="/nosotros" element={<About />}></Route>
+            <Route path="/productos" element={<Products />}></Route>
+            <Route path="/soluciones" element={<Solutions />}></Route>
+            <Route path="/clientes" element={<Clients />}></Route>
+            <Route path="/contacto" element={<Contact />}></Route>
         </Routes>
         <Footer />  
     </>

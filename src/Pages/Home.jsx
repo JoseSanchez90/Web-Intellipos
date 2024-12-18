@@ -27,14 +27,7 @@ function Home() {
           <div className="pt-[50%] px-8 md:pt-[20%] md:pr-[40%] md:pl-[5%] relative animate-fade-down animate-duration-[1000ms] animate-delay-500">
             <p className="text-white font-semibold text-xl md:text-5xl 2xl:text-5xl pb-6">Llevamos la adminsitracion de tu restaurante al siguiente nivel</p>
             <p className="text-white font-normal text-sm md:text-xl pb-8">El manejo de tu restaurante no tiene por qué ser difícil, cuando cuentas con una herramienta eficiente, escalable y fácil de usar, lo que resultará en más clientes satisfechos y leales.</p>
-            <button className="info">
-              <span className="circle1"></span>
-              <span className="circle2"></span>
-              <span className="circle3"></span>
-              <span className="circle4"></span>
-              <span className="circle5"></span>
-              <span className="text-sm md:text-lg">Solicitar mayor información</span>
-            </button>
+            <button className="text-sm btn-info md:font-semibold md:text-xl">Solicitar mayor información</button>
           </div>
         </div>
 
@@ -81,14 +74,7 @@ function Home() {
           <div className="flex flex-col text-right items-end py-36 md:py-0 pl-5% md:pl-[35%] pr-[5%] md:pt-[15%]">
             <p className="text-white font-semibold text-4xl md:text-5xl pb-6">Software</p>
             <p className="text-white font-normal text-lg md:text-xl pb-8">Ofrecemos una solución completa para el sector de restaurantes que se adapta a cualquier tamaño y/o tipo de restaurante desde la operación de tu negocio hasta la fidelización de tus clientes</p>
-            <button className="info">
-                <span className="circle1"></span>
-                <span className="circle2"></span>
-                <span className="circle3"></span>
-                <span className="circle4"></span>
-                <span className="circle5"></span>
-                <span className="text">Más información</span>
-              </button>
+            <button className="btn-info md:font-semibold md:text-xl">Más información</button>
           </div>
         </div>
       
@@ -97,14 +83,7 @@ function Home() {
         <div className="flex flex-col items-start pl-[5%] md:pl-[10%]">
           <p className="text-white font-semibold text-4xl md:text-5xl pb-6">Equipamiento</p>
           <p className="text-white font-normal text-lg md:text-xl pb-8">Contamos con una línea completa de equipos, diseñador especial mente para operar en el exigente ambiente de restaurantes</p>
-          <button className="info">
-              <span className="circle1"></span>
-              <span className="circle2"></span>
-              <span className="circle3"></span>
-              <span className="circle4"></span>
-              <span className="circle5"></span>
-              <span className="text">Más información</span>
-            </button>
+          <button className="btn-info md:font-semibold md:text-xl">Más información</button>
         </div>
         <div className="flex flex-col items-center pt-20">
           <img src={ncr1} alt={ncr1} className="w-52 md:w-96" />
