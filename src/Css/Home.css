@@ -102,3 +102,16 @@
       #005706 10%
     );
   }
+
+  .bgcolor {
+    background: #42CD00;
+  }
+
+  .bgcaract {
+    background: white;
+    box-shadow: 5px 5px 0px;
+  }
+
+  .buynow {
+    
+  }
