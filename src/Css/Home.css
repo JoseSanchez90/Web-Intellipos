@@ -103,15 +103,30 @@
     );
   }
 
-  .bgcolor {
+  .bgcolorprod {
     background: #42CD00;
   }
 
   .bgcaract {
     background: white;
-    box-shadow: 5px 5px 0px;
+    box-shadow: 8px 8px 22px;
   }
 
-  .buynow {
+  /* COMPRAR AHORA */
+
+    .buynow   {
+      border: none; /* Sin borde */
+      box-shadow: 4px 6px 0px #1a9247; /* Sombra inicial */
+      cursor: pointer; /* Cambia el cursor a pointer */
+      transition: transform 0.1s ease, box-shadow 0.1s ease; /* Transición suave */
+    }
     
-  }
+    .buynow:hover {
+      background-color: #25d366; /* Cambia el color al pasar el ratón */
+    }
+    
+    .buynow:active {
+      transform: translate(4px, 6px); /* Mueve el botón hacia abajo y a la derecha */
+      box-shadow: 0 0 0 #1a9247; /* Mantén la sombra fija al presionar */
+      background-color: #25d366; /* Cambia el color al presionar */
+    }

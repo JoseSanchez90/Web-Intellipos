@@ -7,7 +7,7 @@ import aboutbg2 from '../assets/aboutbg2.png'
 import pos from '../assets/pos.jpg'
 import aloha from '../assets/aloha.png'
 import ncr from '../assets/ncr.png'
-import nstar from '../assets/3nstar.png'
+import nstarw from '../assets/3nstar-white.png'
 
 function About() {
   return (
@@ -101,9 +101,9 @@ function About() {
           </div>
 
           <div className="flex flex-col md:grid md:grid-cols-3 items-center">
-            <img src={aloha} alt={aloha} className="w-28 py-6" />
-            <img src={ncr} alt={ncr} className="w-28 py-6" />
-            <img src={nstar} alt={nstar} className="w-28 py-6" />
+            <img src={aloha} alt={aloha} className="w-28 py-6 md:w-64" />
+            <img src={ncr} alt={ncr} className="w-28 py-6 md:w-64" />
+            <img src={nstarw} alt={nstarw} className="w-28 py-6 md:w-64" />
           </div>
 
         </div>
