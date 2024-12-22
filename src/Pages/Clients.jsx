@@ -1,9 +1,15 @@
 import React from 'react'
 
 function Clients() {
+
   return (
-    <div>Clients</div>
+
+    <div className="w-full h-full">
+      <NavbarMobile />
+    </div>
+
   )
+
 }
 
 export default Clients
