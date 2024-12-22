@@ -44,28 +44,37 @@ useEffect(() => {
 
   return (
     
-    <div className={`lg:hidden w-full fixed top-0 z-10  bg-white flex  justify-between transition-all duration-300 ${isScrolled ? "flex-col shadow-lg bg-white py-5" : "py-7 px-7"}`}>
+    <div className={`lg:hidden w-full fixed top-0 z-10 bg-white flex justify-between transition-all duration-300 ${isScrolled ? "flex-col shadow-lg bg-white py-5" : "py-7 px-7"}`}>
+
+        <button onClick={() => setIsOpen(!isOpen)} className={`flex flex-col items-center animate-flip-down animate-duration-900 ${isScrolled ? "animate-fade-left" : "animate-fade-right"}`}>
+          <svg fill="#2dd100" height="32px" width="32px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xmlSpace="preserve"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M217.043,0.001H16.696C7.515,0.001,0,7.479,0,16.697v200.348c0,9.214,7.482,16.693,16.696,16.693h200.348 c9.214,0,16.696-7.481,16.696-16.693V16.697C233.739,7.479,226.224,0.001,217.043,0.001z"></path> </g> </g> <g> <g> <path d="M495.304,0.001H294.957c-9.18,0-16.696,7.477-16.696,16.696v200.348c0,9.214,7.482,16.693,16.696,16.693h200.348 c9.214,0,16.696-7.481,16.696-16.693V16.697C512,7.479,504.485,0.001,495.304,0.001z"></path> </g> </g> <g> <g> <path d="M217.043,278.262H16.696C7.515,278.262,0,285.739,0,294.958v200.348c0,9.214,7.482,16.693,16.696,16.693h200.348 c9.214,0,16.696-7.481,16.696-16.693V294.958C233.739,285.739,226.224,278.262,217.043,278.262z"></path> </g> </g> <g> <g> <path d="M495.304,278.262H294.957c-9.18,0-16.696,7.477-16.696,16.696v200.348c0,9.214,7.482,16.693,16.696,16.693h200.348 c9.214,0,16.696-7.481,16.696-16.693V294.958C512,285.739,504.485,278.262,495.304,278.262z"></path> </g> </g> </g></svg>
+        </button>
 
         <img src={logo} alt={logo} className={`w-32 animate-flip-down animate-duration-1000 ${isScrolled ? "hidden" : "w-32"}`} />
     
-        <button onClick={() => setIsOpen(!isOpen)} className={`flex flex-col items-center animate-flip-down animate-duration-900 ${isScrolled ? "animate-fade-left" : "animate-fade-right"}`}>
-        <svg fill="#2dd100" height="32px" width="32px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xmlSpace="preserve"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M217.043,0.001H16.696C7.515,0.001,0,7.479,0,16.697v200.348c0,9.214,7.482,16.693,16.696,16.693h200.348 c9.214,0,16.696-7.481,16.696-16.693V16.697C233.739,7.479,226.224,0.001,217.043,0.001z"></path> </g> </g> <g> <g> <path d="M495.304,0.001H294.957c-9.18,0-16.696,7.477-16.696,16.696v200.348c0,9.214,7.482,16.693,16.696,16.693h200.348 c9.214,0,16.696-7.481,16.696-16.693V16.697C512,7.479,504.485,0.001,495.304,0.001z"></path> </g> </g> <g> <g> <path d="M217.043,278.262H16.696C7.515,278.262,0,285.739,0,294.958v200.348c0,9.214,7.482,16.693,16.696,16.693h200.348 c9.214,0,16.696-7.481,16.696-16.693V294.958C233.739,285.739,226.224,278.262,217.043,278.262z"></path> </g> </g> <g> <g> <path d="M495.304,278.262H294.957c-9.18,0-16.696,7.477-16.696,16.696v200.348c0,9.214,7.482,16.693,16.696,16.693h200.348 c9.214,0,16.696-7.481,16.696-16.693V294.958C512,285.739,504.485,278.262,495.304,278.262z"></path> </g> </g> </g></svg>
-        </button>
-
-            {isOpen && (
-            <div ref={menuRef} className={`absolute z-50 grid grid-cols-2 items-end right-5 text-white font-bold mt-10 py-2 px-2 gap-4 bg-green-600 shadow-lg shadow-slate-800 animate-flip-down animate-duration-1000 ${isScrolled ? "w-56 left-[23%] grid grid-cols-2 py-2 px-2 justify-items-start gap-1" : "text-end"}`}>
-              <div className="flex flex-col">
-                <NavLink to="/" className="dropdown-item text-sm hover:bg-green-700 py-1 p-2 w-full">Inicio</NavLink>
-                <NavLink to="/nosotros" className="dropdown-item text-sm hover:bg-green-700 py-1 p-2 w-full">Nosotros</NavLink>
-                <NavLink to="productos" className="dropdown-item text-sm hover:bg-green-700 py-1 p-2 w-full">Productos</NavLink>
+        {isOpen && (
+        <div ref={menuRef} className={`absolute z-50 grid grid-cols-2 items-start text-white font-bold mt-10 py-2 px-2 gap-4 bg-green-600 shadow-lg shadow-slate-800 animate-flip-down animate-duration-1000 ${isScrolled ? 'w-[270px] grid grid-cols-2 left-[15%] py-2 px-2 justify-start gap-1' : 'text-start'}`}>
+          <div className="flex flex-col gap-1">
+            <NavLink to="/" className="dropdown-item text-sm hover:bg-green-800 py-1 p-2 w-full">Inicio</NavLink>
+            <NavLink to="/nosotros" className="dropdown-item text-sm hover:bg-green-800 py-1 p-2 w-full">Nosotros</NavLink>
+            <NavLink to="/productos" className="dropdown-item text-sm hover:bg-green-800 py-1 p-2 w-full">Productos</NavLink>
+            <NavLink to="/clientes" className="dropdown-item text-sm hover:bg-green-800 py-1 p-2 w-full">Clientes</NavLink>
+            <NavLink to="/contactenos" className="dropdown-item text-sm hover:bg-green-800 py-1 p-2 w-full">Contactanos</NavLink>
+          </div>
+          <div className="flex flex-col">
+              <NavLink className="dropdown-item cursor-default text-sm py-1 p-2 w-full">Soluciones</NavLink>
+              <div className="ml-4 flex flex-col text-sm py-2">
+                <div className="flex flex-row items-center dropdown-item hover:bg-green-800 py-1 px-2 w-full gap-1">
+                  <svg fill="#ffffff" width="18px" height="18px" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M216.53882,184.42627c-.0188.019-.03443.04-.05347.05908l-48,48a12.0001,12.0001,0,0,1-16.9707-16.9707L179.0293,188H64a12.00028,12.00028,0,0,1-12-12V32a12,12,0,0,1,24,0V164H179.0293l-27.51465-27.51465a12.0001,12.0001,0,1,1,16.9707-16.9707l48,48c.019.019.03467.04.05347.05908.25854.262.50635.53418.74.81885.12012.146.22461.2998.33667.45019.12182.16309.24829.32251.36157.492.11865.177.22168.36084.32983.54272.09205.1543.18921.30518.27417.46387.09864.18408.18213.37329.27051.56128.07862.16723.16211.33179.2334.50317.07593.18311.13721.37036.20361.55664.06568.18311.13623.36377.19288.551.05712.18823.09912.37964.14648.56982.04761.18946.10083.37622.13916.56909.0437.22071.07031.44361.10156.666.0232.16553.05518.32788.07154.49536a12.0756,12.0756,0,0,1,0,2.37256c-.01636.16748-.04834.32983-.07154.49536-.03125.22241-.05786.44531-.10156.666-.03833.19287-.09155.37963-.13916.56909-.04736.19018-.08936.38159-.14648.56982-.05689.1875-.12745.36841-.19312.552-.06616.18555-.12744.37256-.20337.55542-.07129.17188-.15478.33667-.23389.50415-.08789.18775-.17163.37647-.27.56055-.085.15869-.18212.30957-.27417.46387-.10815.18188-.21118.36572-.32983.54272-.11328.16944-.23975.32886-.36157.492-.11206.15039-.21655.3042-.33667.45019C217.04517,183.89209,216.79736,184.16431,216.53882,184.42627Z"></path> </g></svg>
+                  <NavLink to="/soluciones/software" className="">Software</NavLink>
+                </div>
+                <div className="flex flex-row items-center dropdown-item hover:bg-green-800 py-1 px-2 w-full gap-1">
+                  <svg fill="#ffffff" width="18px" height="18px" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M216.53882,184.42627c-.0188.019-.03443.04-.05347.05908l-48,48a12.0001,12.0001,0,0,1-16.9707-16.9707L179.0293,188H64a12.00028,12.00028,0,0,1-12-12V32a12,12,0,0,1,24,0V164H179.0293l-27.51465-27.51465a12.0001,12.0001,0,1,1,16.9707-16.9707l48,48c.019.019.03467.04.05347.05908.25854.262.50635.53418.74.81885.12012.146.22461.2998.33667.45019.12182.16309.24829.32251.36157.492.11865.177.22168.36084.32983.54272.09205.1543.18921.30518.27417.46387.09864.18408.18213.37329.27051.56128.07862.16723.16211.33179.2334.50317.07593.18311.13721.37036.20361.55664.06568.18311.13623.36377.19288.551.05712.18823.09912.37964.14648.56982.04761.18946.10083.37622.13916.56909.0437.22071.07031.44361.10156.666.0232.16553.05518.32788.07154.49536a12.0756,12.0756,0,0,1,0,2.37256c-.01636.16748-.04834.32983-.07154.49536-.03125.22241-.05786.44531-.10156.666-.03833.19287-.09155.37963-.13916.56909-.04736.19018-.08936.38159-.14648.56982-.05689.1875-.12745.36841-.19312.552-.06616.18555-.12744.37256-.20337.55542-.07129.17188-.15478.33667-.23389.50415-.08789.18775-.17163.37647-.27.56055-.085.15869-.18212.30957-.27417.46387-.10815.18188-.21118.36572-.32983.54272-.11328.16944-.23975.32886-.36157.492-.11206.15039-.21655.3042-.33667.45019C217.04517,183.89209,216.79736,184.16431,216.53882,184.42627Z"></path> </g></svg>
+                  <NavLink to="/soluciones/hardware" className="">Hardware</NavLink>
+                </div>
               </div>
-              <div className="flex flex-col">
-                <NavLink to="soluciones" className="dropdown-item text-sm hover:bg-green-700 py-1 p-2 w-full">Soluciones</NavLink>
-                <NavLink to="clientes" className="dropdown-item text-sm hover:bg-green-700 py-1 p-2 w-full">Clientes</NavLink>
-                <NavLink to="contactenos" className="dropdown-item text-sm hover:bg-green-700 py-1 p-2 w-full">Contactanos</NavLink>
-              </div>
-              
-            </div>
+          </div>
+        </div>
             )}
 
     </div>

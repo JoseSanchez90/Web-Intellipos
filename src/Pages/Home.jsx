@@ -50,11 +50,11 @@ function Home() {
               <p className="text-base font-normal text-center">Tecnología lider en la industria de Restaurantes</p>
             </div>
             <div className="flex flex-col items-center place-content-center border-2 border-green-600 rounded-lg mx-18 p-5 gap-4">
-              <svg fill="#000000" height="64px" width="64px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M256,0C136.384,0,42.667,42.176,42.667,96v320c0,53.824,93.717,96,213.333,96s213.333-42.176,213.333-96V96 C469.333,42.176,375.616,0,256,0z M448,416c0,35.307-78.848,74.667-192,74.667S64,451.307,64,416v-64.384 c34.197,32.043,106.347,53.717,192,53.717s157.803-21.675,192-53.717V416z M448,309.333C448,344.64,369.152,384,256,384 S64,344.64,64,309.333v-64.384c34.197,32.043,106.347,53.717,192,53.717s157.803-21.675,192-53.717V309.333z M448,202.667 c0,35.307-78.848,74.667-192,74.667s-192-39.36-192-74.667v-64.384C98.197,170.325,170.347,192,256,192s157.803-21.675,192-53.717 V202.667z M256,170.667c-113.152,0-192-39.36-192-74.667c0-35.307,78.848-74.667,192-74.667S448,60.693,448,96 C448,131.307,369.152,170.667,256,170.667z"></path> </g> </g> </g></svg>
+              <svg fill="#000000" height="64px" width="64px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xmlSpace="preserve"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M256,0C136.384,0,42.667,42.176,42.667,96v320c0,53.824,93.717,96,213.333,96s213.333-42.176,213.333-96V96 C469.333,42.176,375.616,0,256,0z M448,416c0,35.307-78.848,74.667-192,74.667S64,451.307,64,416v-64.384 c34.197,32.043,106.347,53.717,192,53.717s157.803-21.675,192-53.717V416z M448,309.333C448,344.64,369.152,384,256,384 S64,344.64,64,309.333v-64.384c34.197,32.043,106.347,53.717,192,53.717s157.803-21.675,192-53.717V309.333z M448,202.667 c0,35.307-78.848,74.667-192,74.667s-192-39.36-192-74.667v-64.384C98.197,170.325,170.347,192,256,192s157.803-21.675,192-53.717 V202.667z M256,170.667c-113.152,0-192-39.36-192-74.667c0-35.307,78.848-74.667,192-74.667S448,60.693,448,96 C448,131.307,369.152,170.667,256,170.667z"></path> </g> </g> </g></svg>
               <p className="text-base font-normal text-center">Tecnología lider en la industria de Restaurantes</p>
             </div>
             <div className="flex flex-col items-center place-content-center border-2 border-green-600 rounded-lg mx-18 p-5 gap-4">
-              <svg fill="#000000" width="64px" height="64px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill-rule="evenodd" d="M12 2.5c-3.81 0-6.5 2.743-6.5 6.119 0 1.536.632 2.572 1.425 3.56.172.215.347.422.527.635l.096.112c.21.25.427.508.63.774.404.531.783 1.128.995 1.834a.75.75 0 01-1.436.432c-.138-.46-.397-.89-.753-1.357a18.354 18.354 0 00-.582-.714l-.092-.11c-.18-.212-.37-.436-.555-.667C4.87 12.016 4 10.651 4 8.618 4 4.363 7.415 1 12 1s8 3.362 8 7.619c0 2.032-.87 3.397-1.755 4.5-.185.23-.375.454-.555.667l-.092.109c-.21.248-.405.481-.582.714-.356.467-.615.898-.753 1.357a.75.75 0 01-1.437-.432c.213-.706.592-1.303.997-1.834.202-.266.419-.524.63-.774l.095-.112c.18-.213.355-.42.527-.634.793-.99 1.425-2.025 1.425-3.561C18.5 5.243 15.81 2.5 12 2.5zM9.5 21.75a.75.75 0 01.75-.75h3.5a.75.75 0 010 1.5h-3.5a.75.75 0 01-.75-.75zM8.75 18a.75.75 0 000 1.5h6.5a.75.75 0 000-1.5h-6.5z"></path></g></svg>
+              <svg fill="#000000" width="64px" height="64px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"><path fillRule="evenodd" d="M12 2.5c-3.81 0-6.5 2.743-6.5 6.119 0 1.536.632 2.572 1.425 3.56.172.215.347.422.527.635l.096.112c.21.25.427.508.63.774.404.531.783 1.128.995 1.834a.75.75 0 01-1.436.432c-.138-.46-.397-.89-.753-1.357a18.354 18.354 0 00-.582-.714l-.092-.11c-.18-.212-.37-.436-.555-.667C4.87 12.016 4 10.651 4 8.618 4 4.363 7.415 1 12 1s8 3.362 8 7.619c0 2.032-.87 3.397-1.755 4.5-.185.23-.375.454-.555.667l-.092.109c-.21.248-.405.481-.582.714-.356.467-.615.898-.753 1.357a.75.75 0 01-1.437-.432c.213-.706.592-1.303.997-1.834.202-.266.419-.524.63-.774l.095-.112c.18-.213.355-.42.527-.634.793-.99 1.425-2.025 1.425-3.561C18.5 5.243 15.81 2.5 12 2.5zM9.5 21.75a.75.75 0 01.75-.75h3.5a.75.75 0 010 1.5h-3.5a.75.75 0 01-.75-.75zM8.75 18a.75.75 0 000 1.5h6.5a.75.75 0 000-1.5h-6.5z"></path></g></svg>
               <p className="text-base font-normal text-center">Solución modular que se adapta a tu negocio o requerimiento</p>
             </div>
           </div>
@@ -186,12 +186,6 @@ function Home() {
         </div>
       </div>
     </div>
-
-{/* FOOTER */}
-
-    {/* <div className="pt-16 md:pt-32">
-      <Footer />
-    </div> */}
 
     </div>
 
