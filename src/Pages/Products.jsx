@@ -49,7 +49,7 @@ function Products() {
                   <p className="text-xs text-slate-500">3.0" 920k-Dot Tilting LCD Monitor</p>
                   <p className="text-xs text-slate-500">Full HD 1080p Video Recording at 60 fps</p>
                   <p className="text-xs text-slate-500">Built-In Wi-Fi Connectivity</p>
-                  <p className="text-xs text-slate-600 font-semibold">Precio no incluye IGV</p>
+                  <p className="text-xs text-slate-600 font-semibold pt-4">Precio no incluye IGV</p>
                 </div>
                 <div className="flex flex-col pt-4 gap-2">
                   <p className="text-base font-bold">Desde:</p>
