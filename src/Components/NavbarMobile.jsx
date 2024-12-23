@@ -59,7 +59,7 @@ useEffect(() => {
             <NavLink to="/nosotros" className="dropdown-item text-sm hover:bg-green-800 py-1 p-2 w-full">Nosotros</NavLink>
             <NavLink to="/productos" className="dropdown-item text-sm hover:bg-green-800 py-1 p-2 w-full">Productos</NavLink>
             <NavLink to="/clientes" className="dropdown-item text-sm hover:bg-green-800 py-1 p-2 w-full">Clientes</NavLink>
-            <NavLink to="/contactenos" className="dropdown-item text-sm hover:bg-green-800 py-1 p-2 w-full">Contactanos</NavLink>
+            <NavLink to="/contactanos" className="dropdown-item text-sm hover:bg-green-800 py-1 p-2 w-full">Contactanos</NavLink>
           </div>
           <div className="flex flex-col">
               <NavLink className="dropdown-item cursor-default text-sm py-1 p-2 w-full">Soluciones</NavLink>

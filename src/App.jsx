@@ -3,7 +3,6 @@ import Home from './Pages/Home'
 import Navbar from './Components/Navbar'
 import About from './Pages/About'
 import Products from './Pages/Products'
-import Solutions from './Pages/Solutions'
 import Software from './Pages/Software'
 import Hardware from './Pages/Hardware'
 import Clients from './Pages/Clients'
@@ -22,7 +21,7 @@ function App() {
             <Route path="/soluciones/software" element={<Software />}></Route>
             <Route path="/soluciones/hardware" element={<Hardware />}></Route>
             <Route path="/clientes" element={<Clients />}></Route>
-            <Route path="/contacto" element={<Contact />}></Route>
+            <Route path="/contactanos" element={<Contact />}></Route>
         </Routes>
         <Footer />  
     </>
