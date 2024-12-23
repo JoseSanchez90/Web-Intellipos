@@ -42,7 +42,7 @@ function Navbar() {
 
   return (
     
-  <div className={`hidden w-full fixed top-0 z-10 md:flex flex-row justify-between items-center bg-white transition-all duration-500 ${isScrolled ? "shadow-lg rounded-full bg-slate-100 px-20 py-4 text-sm my-2 mx-2 w-[1400px] transform translate-x-14" : "px-10 py-8 text-base"}`}>
+  <div className={`hidden w-full fixed top-0 z-10 md:flex flex-row justify-between items-center bg-white transition-all duration-500 ${isScrolled ? "shadow-lg rounded-full bg-slate-100 px-20 py-4 text-sm my-2 mx-2 w-[1200px] 2xl:w-[1400px] transform translate-x-16 2xl:translate-x-14" : "px-10 py-8 text-base"}`}>
     
       
       <img src={logoInt} alt={logoInt} className={`transition-all duration-300 ${isScrolled ? "w-32" : "w-48"}`}/>
