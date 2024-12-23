@@ -27,7 +27,7 @@ function Home() {
           <div className="pt-[50%] px-8 md:pt-[15%] md:pr-[40%] md:pl-[5%] relative animate-fade-down animate-duration-[1000ms] animate-delay-500">
             <p className="text-white font-semibold text-xl md:text-5xl pb-6">Llevamos la adminsitracion de tu restaurante al siguiente nivel</p>
             <p className="text-white font-normal text-sm md:text-xl pb-12">El manejo de tu restaurante no tiene por qué ser difícil, cuando cuentas con una herramienta eficiente, escalable y fácil de usar, lo que resultará en más clientes satisfechos y leales.</p>
-            <a className="text-sm btn-info md:font-semibold md:text-xl">Solicitar información</a>
+            <button className="text-sm btn-info md:font-semibold md:text-xl">Solicitar información</button>
           </div>
         </div>
 

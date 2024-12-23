@@ -6,7 +6,7 @@ function Software() {
 
     <div className="w-full h-full">
 
-      <div className="w-full h-full bg-blue-950">
+      <div className="w-full h-full bg-slate-950">
         
         <NavbarMobile />
 
@@ -46,7 +46,7 @@ function Software() {
 {/* SPOT 3 */}
 
         <div>
-
+          
         </div>
 
       </div>

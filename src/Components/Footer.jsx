@@ -13,8 +13,9 @@ const Footer = () => {
         </div>
 
         {/* Derechos reservados */}
-        <div className="mt-0 text-sm">
-          <p>&copy; 2024 IntelliPOS. Todos los derechos reservados.</p>
+        <div className="mt-0 text-sm text-center">
+          <p>&copy; 2024 IntelliPOS. Derechos Reservados.</p>
+          <p>Diseñado por Jose Sanchez</p>
         </div>
         
       </div>
