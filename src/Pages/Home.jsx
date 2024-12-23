@@ -24,10 +24,10 @@ function Home() {
 {/* SPOT 1 */}
         
         <div className="h-full w-full">
-          <div className="pt-[50%] px-8 md:pt-[20%] md:pr-[40%] md:pl-[5%] relative animate-fade-down animate-duration-[1000ms] animate-delay-500">
+          <div className="pt-[50%] px-8 md:pt-[15%] md:pr-[40%] md:pl-[5%] relative animate-fade-down animate-duration-[1000ms] animate-delay-500">
             <p className="text-white font-semibold text-xl md:text-5xl 2xl:text-5xl pb-6">Llevamos la adminsitracion de tu restaurante al siguiente nivel</p>
             <p className="text-white font-normal text-sm md:text-xl pb-8">El manejo de tu restaurante no tiene por qué ser difícil, cuando cuentas con una herramienta eficiente, escalable y fácil de usar, lo que resultará en más clientes satisfechos y leales.</p>
-            <button className="text-sm btn-info md:font-semibold md:text-xl">Solicitar mayor información</button>
+            <button className="text-sm btn-info md:font-semibold md:text-xl">Solicitar información</button>
           </div>
         </div>
 
