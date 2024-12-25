@@ -64,22 +64,28 @@ function Products() {
 
       <div className="h-full w-full">
         <div className="flex flex-row md:gap-10 px-2 md:px-36 py-10 md:py-32">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-8">
             {products.map((product) => (
 
-              <div key={product.id} className="flex flex-col gap-5 md:gap-10 py-5 md:py-10 px-2 md:px-6 object-fill items-center justify-start rounded-lg" style={{ backgroundColor: 'rgb(240, 240, 240)' }}>
-                <div className="flex flex-col">
-                  <img src={product.img} alt={product.img} className="w-28 md:w-56 h-24 md:h-44 "/>
+              <div key={product.id} className="grid grid-cols-2 gap-5 md:gap-10 py-5 md:py-10 px-2 md:px-6 object-fill rounded-lg" style={{ backgroundColor: 'rgb(240, 240, 240)' }}>
+                <div className="w-full h-full flex flex-col px-5 gap-3 items-center justify-between">
+                  <h3 className="font-semibold md:font-bold text-base md:text-xl text-center text-black">{product.name}</h3>
+                  <img src={product.img} alt={product.img} className="w-20 md:w-40 h-12 md:h-36 "/>
                 </div>
-                <div className="h-full flex flex-col gap-2">
-                  <div className="h-28 md:h-40 flex flex-col justify-between">
-                      <h3 className="font-semibold md:font-bold text-base md:text-xl text-center text-black">{product.name}</h3>
-                      <h3 className="font-semibold md:font-bold text-base md:text-lg text-center text-slate-700">{product.model}</h3>
+                <div className="w-full h-full flex flex-col gap-2">
+                  <h3 className="font-semibold md:font-bold text-base md:text-lg text-slate-700">{product.model}</h3>
+                <div className="w-full h-full flex flex-col justify-between">
+                  <h3 className="font-light md:font-normal text-sm text-black">{product.description}</h3>
+                  <button className="btn-contact">Cotizar</button>
+                </div>
+
+                  {/* <div className="h-28 md:h-40 flex flex-col justify-between">
+                      
+                      
                   </div>
                   <div className="flex flex-col h-full justify-between">
-                    <h3 className="font-light md:font-normal text-center text-black">{product.description}</h3>
-                    <button className="py-2 rounded-md text-white text-base font-semibold bg-green-500">Cotizar</button>
-                  </div>
+                    
+                  </div> */}
                 </div>
               </div>          
               

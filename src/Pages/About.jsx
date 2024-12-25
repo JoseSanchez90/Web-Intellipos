@@ -22,9 +22,13 @@ function About() {
 
 {/* SPOT 1 */}
 
-            <div className="h-full flex flex-col justify-start py-48 gap-20 md:grid md:grid-cols-2 items-center px-2 2xl:px-10 animate-fade-down animate-duration-[1000ms] animate-delay-500">
-              <p className="text-white font-normal md:font-semibold text-lg md:text-2xl px-2 md:px-10 md:pb-32">Somos IntelliPOS, representantes de la Corporación NCR para su solución de restaurantes ALOHA</p>
-              <p className="text-white font-normal md:font-semibold text-lg md:text-2xl px-2 md:px-10 md:pt-40">Aloha cubre el ciclo completo de operaciones y gestión del sector de restaurantes, está es una solución global instalada en más de 100,000 restaurantes</p>
+            <div className="h-full flex flex-row justify-end gap-16 md:grid md:grid-cols-2 items-center px-2 2xl:px-10 md:py-60 2xl:py-48 animate-fade-down animate-duration-[1000ms] animate-delay-500">
+              <div className="h-full flex flex-col justify-start">
+                <p className="text-white text-center font-normal md:font-semibold text-lg md:text-xl 2xl:text-2xl px-2 md:mx-5 py-4 border-y-4 border-green-500">Somos IntelliPOS, representantes de la Corporación NCR para su solución de restaurantes ALOHA</p>
+              </div>
+              <div className="h-full flex flex-col justify-end">
+                <p className="text-white text-center font-normal md:font-semibold text-lg md:text-xl 2xl:text-2xl px-2 md:mx-10 py-4 border-y-4 border-green-500">Aloha cubre el ciclo completo de operaciones y gestión del sector de restaurantes, está es una solución global instalada en más de 100,000 restaurantes</p>
+              </div>
             </div>
 
       </div>

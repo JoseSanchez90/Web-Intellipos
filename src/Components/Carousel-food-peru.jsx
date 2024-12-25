@@ -44,7 +44,7 @@ const CarouselPeru = () => {
           key={index}
           src={image}
           alt={`Slide ${index}`}
-          className="w-full h-32 md:h-80 object-contain flex-shrink-0"
+          className="w-full h-32 md:h-60 object-contain flex-shrink-0"
         />
         ))}
       </div>
