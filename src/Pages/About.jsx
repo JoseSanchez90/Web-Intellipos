@@ -22,12 +22,12 @@ function About() {
 
 {/* SPOT 1 */}
 
-            <div className="h-full flex flex-row justify-end gap-16 md:grid md:grid-cols-2 items-center px-2 2xl:px-10 md:py-60 2xl:py-48 animate-fade-down animate-duration-[1000ms] animate-delay-500">
+            <div className="w-full h-full flex flex-row justify-end gap-16 md:grid md:grid-cols-2 items-center 2xl:pt-60 px-2 2xl:px-10 md:py-60 2xl:py-48 animate-fade-down animate-duration-[1000ms] animate-delay-500">
               <div className="h-full flex flex-col justify-start">
-                <p className="text-white text-center font-normal md:font-semibold text-lg md:text-xl 2xl:text-2xl px-2 md:mx-5 py-4 border-y-4 border-green-500">Somos IntelliPOS, representantes de la Corporación NCR para su solución de restaurantes ALOHA</p>
+                <p className="text-white text-center font-normal md:font-semibold text-lg md:text-xl px-2 md:mx-5 py-4 border-y-4 border-green-500">Somos IntelliPOS, representantes de la Corporación NCR para su solución de restaurantes ALOHA</p>
               </div>
               <div className="h-full flex flex-col justify-end">
-                <p className="text-white text-center font-normal md:font-semibold text-lg md:text-xl 2xl:text-2xl px-2 md:mx-10 py-4 border-y-4 border-green-500">Aloha cubre el ciclo completo de operaciones y gestión del sector de restaurantes, está es una solución global instalada en más de 100,000 restaurantes</p>
+                <p className="text-white text-center font-normal md:font-semibold text-lg md:text-xl px-2 md:mx-10 py-4 border-y-4 border-green-500">Aloha cubre el ciclo completo de operaciones y gestión del sector de restaurantes, está es una solución global instalada en más de 100,000 restaurantes</p>
               </div>
             </div>
 
@@ -39,7 +39,7 @@ function About() {
 
           <div className="grid grid-cols-1 pt-5 md:px-20">
             
-            <p className="font-medium md:font-bold text-lg md:text-3xl px-2 md:px-20 text-center py-10 md:py-20 text-green-950">Nuestro objetivo principal es la de satisfacer las necesidades de nuestros clientes con los productos y servicios de clase mundial, siendo el soporte de post-venta la pieza clave para la continuidad en las operaciones cotidianas del negocio-restaurante</p>
+            <p className="font-medium md:font-bold text-lg md:text-xl px-2 md:px-40 text-center py-10 md:py-20 text-green-950">Nuestro objetivo principal es la de satisfacer las necesidades de nuestros clientes con los productos y servicios de clase mundial, siendo el soporte de post-venta la pieza clave para la continuidad en las operaciones cotidianas del negocio-restaurante</p>
 
             <div className="flex flex-col gap-5 md:grid md:grid-cols-2 md:gap-10 px-12 md:px-48">
 
@@ -64,7 +64,7 @@ function About() {
 
         <div className="grid grid-cols-1 py-12 md:py-0 md:pt-20 md:px-40">
           
-          <p className="font-medium md:font-bold text-lg md:text-3xl text-green-950 md:px-32 text-center py-5 md:py-10">NUESTROS VALORES</p>
+          <p className="font-medium md:font-bold text-lg md:text-2xl text-green-950 md:px-32 text-center py-5 md:py-10">NUESTROS VALORES</p>
 
           <div className="grid grid-cols-2 gap-1 px-2 md:gap-4 md:px-36">
 
@@ -97,11 +97,11 @@ function About() {
         <div className="flex flex-col md:gap-10 py-16 md:py-28 md:px-48">
 
           <div>
-            <p className="font-medium md:font-bold text-lg md:text-5xl text-white text-center">Nuestros proveedores</p>
+            <p className="font-medium md:font-bold text-lg md:text-3xl text-white text-center">Nuestros proveedores</p>
           </div>
 
           <div className="py-10">
-            <p className="md:font-semibold md:text-3xl px-2 text-white text-center">Mantenemos sociedad con proveedores que atesoran valores compatibles con nuestra visión de empresa y que se caracterizan por tener larga experiencia y un comportamiento ético ejemplar</p>
+            <p className="md:font-semibold md:text-2xl px-2 text-white text-center">Mantenemos sociedad con proveedores que atesoran valores compatibles con nuestra visión de empresa y que se caracterizan por tener larga experiencia y un comportamiento ético ejemplar</p>
           </div>
 
           <div className="flex flex-col md:grid md:grid-cols-3 items-center">
@@ -121,11 +121,11 @@ function About() {
         <div className="flex flex-col gap-5 md:gap-10 py-16 md:py-28 px-2 md:px-48">
 
           <div>
-            <p className="font-medium md:font-bold text-lg md:text-5xl text-center">Nuestros Clientes</p>
+            <p className="font-medium md:font-bold text-lg md:text-3xl text-center">Nuestros Clientes</p>
           </div>
 
           <div className="pb-5 md:pb-10">
-            <p className="md:font-semibold md:text-3xl text-center">Estamos totalmente integrados y encauzados con la calidad del servicio y productos entregados a nuestros clientes y nos esforzamos por contribuir a que obtengan valor y los pueda transmitir a sus propios clientes</p>
+            <p className="md:font-semibold md:text-2xl text-center">Estamos totalmente integrados y encauzados con la calidad del servicio y productos entregados a nuestros clientes y nos esforzamos por contribuir a que obtengan valor y los pueda transmitir a sus propios clientes</p>
           </div>
 
           <CarouselPeru />
