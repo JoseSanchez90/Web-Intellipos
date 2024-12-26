@@ -130,3 +130,9 @@
       box-shadow: 0 0 0 #1a9247; /* Mantén la sombra fija al presionar */
       background-color: #25d366; /* Cambia el color al presionar */
     }
+
+  /* SOFTWARE */
+
+    .operacion, .administracion, .fidelizacion {
+      box-shadow: 8px 8px 0px #1dbf58;
+    }
