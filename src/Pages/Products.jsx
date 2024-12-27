@@ -68,24 +68,16 @@ function Products() {
             {products.map((product) => (
 
               <div key={product.id} className="grid grid-cols-2 gap-5 md:gap-10 py-5 md:py-10 px-2 md:px-6 object-fill rounded-lg" style={{ backgroundColor: 'rgb(240, 240, 240)' }}>
-                <div className="w-full h-full flex flex-col px-5 gap-3 items-center justify-between">
+                <div className="w-full h-full flex flex-col px-5 gap-8 md:gap-3 items-center justify-start md:justify-between">
                   <h3 className="font-semibold md:font-bold text-base md:text-xl text-center text-black">{product.name}</h3>
-                  <img src={product.img} alt={product.img} className="w-20 md:w-40 h-12 md:h-36 "/>
+                  <img src={product.img} alt={product.img} className="w-28 md:w-40 h-28 md:h-36 "/>
                 </div>
-                <div className="w-full h-full flex flex-col gap-2">
+                <div className="w-full h-full flex flex-col justify-start px-2 gap-2">
                   <h3 className="font-semibold md:font-bold text-base md:text-lg text-slate-700">{product.model}</h3>
-                <div className="w-full h-full flex flex-col justify-between">
-                  <h3 className="font-light md:font-normal text-sm text-black">{product.description}</h3>
-                  <button className="btn-contact">Cotizar</button>
-                </div>
-
-                  {/* <div className="h-28 md:h-40 flex flex-col justify-between">
-                      
-                      
+                  <div className="w-full h-full flex flex-col justify-between gap-5">
+                    <h3 className="font-light md:font-normal text-sm text-black">{product.description}</h3>
+                    <button className="btn-contact">Cotizar</button>
                   </div>
-                  <div className="flex flex-col h-full justify-between">
-                    
-                  </div> */}
                 </div>
               </div>          
               
@@ -97,7 +89,7 @@ function Products() {
 {/* GOOGLE MAPS OFICINA  */}
 
       <div className="w-full h-full flex flex-col items-center gap-5 md:gap-10 pb-10 md:pb-20">
-        <p className="text-xl md:text-3xl font-semibold md:font-bold text-center">Ubicacion exacta de nuestra Oficina</p>
+        <p className="text-xl md:text-3xl font-semibold md:font-bold text-center px-5">Ubicacion exacta de nuestra Oficina</p>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.9528446676923!2d-77.00103062536448!3d-12.11537904318117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7ef85c2afe7%3A0x3e4c3619b9146e1e!2sC.%20Sanzio%20150%2C%20Lima%2015038!5e0!3m2!1ses-419!2spe!4v1734885222677!5m2!1ses-419!2spe" allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="w-[350px] h-[250px] md:w-[800px] md:h-[400px] border-0"
          allowFullScreen="">
         </iframe>

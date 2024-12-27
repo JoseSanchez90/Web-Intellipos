@@ -71,7 +71,7 @@ function Home() {
 
       <div className="flex flex-col gap-10">
         <div className="w-full h-full bg-center md:h-96 bg-no-repeat" style={{ backgroundImage: `url(${pos2})` }}>
-          <div className="flex flex-col text-right items-end py-36 md:py-20 md:pl-5% md:px-60 md:pr-[5%]">
+          <div className="flex flex-col text-right items-end py-36 pr-[5%] px-5 md:py-20 md:px-60 md:pr-[5%]">
             <p className="text-white font-semibold text-4xl md:text-4xl pb-6">Software</p>
             <p className="text-white font-normal text-lg md:text-xl pb-8">Ofrecemos una solución completa para el sector de restaurantes que se adapta a cualquier tamaño y/o tipo de restaurante desde la operación de tu negocio hasta la fidelización de tus clientes</p>
             <button className="btn-info md:font-semibold md:text-xl">Más información</button>
@@ -79,9 +79,9 @@ function Home() {
         </div>
       
 
-        <div className="w-full h-96 flex flex-col md:grid md:grid-cols-2 md:py-20 bg-center bg-no-repeat" style={{ backgroundImage: `url(${pos3})` }}>
+        <div className="w-full h-full md:h-96 flex flex-col gap-20 py-36 md:grid md:grid-cols-2 md:py-20 bg-center bg-no-repeat" style={{ backgroundImage: `url(${pos3})` }}>
           <div className="h-full flex flex-col items-start justify-center pl-[5%] md:pl-[10%]">
-            <p className="text-white font-semibold text-4xl md:text-4xl pb-6">Equipamiento</p>
+            <p className="text-white font-semibold text-4xl md:text-4xl pb-6">Hardware</p>
             <p className="text-white font-normal text-lg md:text-xl pb-8">Contamos con una línea completa de equipos, diseñador especial mente para operar en el exigente ambiente de restaurantes</p>
             <button className="btn-info md:font-semibold md:text-xl">Más información</button>
           </div>
