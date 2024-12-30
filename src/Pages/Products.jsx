@@ -90,8 +90,7 @@ function Products() {
 
       <div className="w-full h-full flex flex-col items-center gap-5 md:gap-10 pb-10 md:pb-20">
         <p className="text-xl md:text-3xl font-semibold md:font-bold text-center px-5">Ubicacion exacta de nuestra Oficina</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.9528446676923!2d-77.00103062536448!3d-12.11537904318117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7ef85c2afe7%3A0x3e4c3619b9146e1e!2sC.%20Sanzio%20150%2C%20Lima%2015038!5e0!3m2!1ses-419!2spe!4v1734885222677!5m2!1ses-419!2spe" allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="w-[350px] h-[250px] md:w-[800px] md:h-[400px] border-0"
-         allowFullScreen="">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.9528446676923!2d-77.00103062536448!3d-12.11537904318117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7ef85c2afe7%3A0x3e4c3619b9146e1e!2sC.%20Sanzio%20150%2C%20Lima%2015038!5e0!3m2!1ses-419!2spe!4v1734885222677!5m2!1ses-419!2spe" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="w-[350px] h-[250px] md:w-[800px] md:h-[400px] border-0">
         </iframe>
       </div>
 
