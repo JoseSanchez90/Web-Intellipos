@@ -53,7 +53,7 @@ useEffect(() => {
         <img src={logo} alt={logo} className={`w-32 animate-flip-down animate-duration-1000 ${isScrolled ? "hidden" : "w-32"}`} />
     
         {isOpen && (
-        <div ref={menuRef} className={`absolute z-50 grid grid-cols-2 items-start text-white font-bold mt-10 py-2 px-2 gap-4 bg-green-600 shadow-lg shadow-slate-800 animate-flip-down animate-duration-1000 ${isScrolled ? 'w-[270px] grid grid-cols-2 left-[15%] py-2 px-2 justify-start gap-1' : 'text-start'}`}>
+        <div ref={menuRef} className={`absolute z-50 grid grid-cols-2 items-start text-white font-bold mt-10 py-2 px-2 gap-4 bg-green-600 shadow-lg shadow-slate-800 animate-flip-down animate-duration-300 ${isScrolled ? 'w-[270px] grid grid-cols-2 left-[15%] py-2 px-2 justify-start gap-1' : 'text-start'}`}>
           <div className="flex flex-col gap-1">
             <NavLink to="/" className="dropdown-item text-sm hover:bg-green-800 py-1 p-2 w-full">Inicio</NavLink>
             <NavLink to="/nosotros" className="dropdown-item text-sm hover:bg-green-800 py-1 p-2 w-full">Nosotros</NavLink>
