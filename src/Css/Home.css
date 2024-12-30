@@ -185,15 +185,23 @@
 /* SWEETALERTA2  */
 
     .custom-ok-button {
-      background-color: #28a745 !important; /* Color verde */
-      color: #fff !important; /* Texto blanco */
-      border: none !important; /* Sin bordes */
-      border-radius: 5px !important; /* Bordes redondeados */
-      padding: 10px 20px !important; /* Espaciado interno */
-      font-size: 16px !important; /* Tamaño del texto */
-      cursor: pointer !important; /* Cursor estilo puntero */
+      border-radius: 8px !important; /* Bordes redondeados */
+      padding: 10px 30px !important; /* Espaciado interno */
+      border: none !important; /* Sin borde */
+      background-color: #1dbf58 !important; /* Color de fondo */
+      color: #ffffff !important; /* Color del texto */
+      position: relative !important; /* Posicionamiento relativo para manejar la sombra */
+      box-shadow: 4px 6px 0px #066b2d !important; /* Sombra inicial */
+      cursor: pointer !important; /* Cambia el cursor a pointer */
+      transition: transform 0.1s ease, box-shadow 0.1s ease !important; /* Transición suave */
     }
-
+    
     .custom-ok-button:hover {
-      background-color: #218838 !important; /* Verde más oscuro al pasar el mouse */
+      background-color: #25d366 !important; /* Cambia el color al pasar el ratón */
+    }
+    
+    .custom-ok-button:active {
+      transform: translate(4px, 6px) !important; /* Mueve el botón hacia abajo y a la derecha */
+      box-shadow: 0 0 0 #1a9247 !important; /* Mantén la sombra fija al presionar */
+      background-color: #25d366 !important; /* Cambia el color al presionar */
     }

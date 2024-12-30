@@ -1,19 +1,45 @@
+import { useState } from "react";
 import NavbarMobile from "../Components/NavbarMobile"
 import bgAbout from '../assets/aboutbg.png'
 import Swal from "sweetalert2";
 
 function Contact() {
 
+  const [nombre, setNombre] = useState('');
+  const [telefono, setTelefono] = useState('');
+  const [email, setEmail] = useState('');
+  const [empresa, setEmpresa] = useState('');
+  const [negocio, setNegocio] = useState('');
+  const [mensaje, setMensaje] = useState('');
+
   const handleClick = () => {
-    Swal.fire({
-      title: "Mensaje enviado!",
-      icon: "success",
-      confirmButtonText: 'Cerrar',
-      customClass: {
-        confirmButton: "custom-ok-button", // Clase personalizada
-      },
-      draggable: true, // Hace que la alerta sea arrastrable
-    });
+    // Validación de los campos del formulario
+    if (!nombre || !telefono || !email || !empresa || !negocio || !mensaje) {
+      // Alerta si algún campo está vacío
+      Swal.fire({
+        title: "¡Error!",
+        text: "Por favor, rellene todos los campos",
+        icon: "error",
+        confirmButtonText: 'Cerrar ventana',
+        customClass: {
+          confirmButton: "custom-ok-button", // Clase personalizada
+        },
+        draggable: true,
+      });
+    } else {
+      // Si todos los campos están completos, muestra la alerta de éxito
+      Swal.fire({
+        title: "Mensaje enviado!",
+        icon: "success",
+        confirmButtonText: 'Cerrar ventana',
+        customClass: {
+          confirmButton: "custom-ok-button", // Clase personalizada
+        },
+        draggable: true,
+      });
+      // Aquí puedes agregar el código para enviar el formulario (ejemplo: hacer una petición a la API)
+      console.log('Formulario enviado');
+    }
   };
 
   return (
@@ -70,21 +96,21 @@ function Contact() {
                 <div className="grid grid-cols-2 gap-10 items-center">
                   <div className="flex flex-col gap-1 py-2">
                     <label htmlFor="" className="font-semibold">Nombre</label>
-                    <input type="text" id="nombre" placeholder="Ejemplo: Juan Perez" className="p-2"/>
+                    <input type="text" id="nombre" value={nombre} onChange={(e) => setNombre(e.target.value)} placeholder="Ejemplo: Juan Perez" className="p-2"/>
                   </div>
                   <div className="flex flex-col gap-1 py-2">
                     <label htmlFor="" className="font-semibold">Telefono</label>
-                    <input type="number" id="telefono" placeholder="Ejemplo: 987654321" className="p-2 sin-flechas"/>
+                    <input type="number" id="telefono" value={telefono} onChange={(e) => setTelefono(e.target.value)} placeholder="Ejemplo: 987654321" className="p-2 sin-flechas"/>
                   </div>
                 </div>
                 <div className="grid grid-cols-2 gap-10 items-center">
                   <div className="flex flex-col gap-1 py-2">
                     <label htmlFor="" className="font-semibold">Correo electronico</label>
-                    <input type="email" id="email" placeholder="Ejemplo: ejemplo@correo.com.pe" className="p-2"/>
+                    <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Ejemplo: ejemplo@correo.com.pe" className="p-2"/>
                   </div>
                   <div className="flex flex-col gap-1 py-2">
                     <label htmlFor="" className="font-semibold">¿Cual es el nombre de tu negocio?</label>
-                    <input type="text" id="empresa" placeholder="Ejemplo: Restaurante Marca" className="p-2"/>
+                    <input type="text" id="empresa" value={empresa} onChange={(e) => setEmpresa(e.target.value)} placeholder="Ejemplo: Restaurante Marca" className="p-2"/>
                   </div>
                 </div>
               </div>
@@ -95,23 +121,23 @@ function Contact() {
                   </div>
                   <div className="grid grid-cols-3">
                     <label>
-                      <input type="radio" name="subject" value="general" />
+                      <input type="radio" name="subject" value="Restaurante" onChange={(e) => setNegocio(e.target.value)}/>
                       <span className="pl-2">Restaurante</span>
                     </label>
                     <label>
-                      <input type="radio" name="subject" value="general" />
+                      <input type="radio" name="subject" value="Retail" onChange={(e) => setNegocio(e.target.value)}/>
                       <span className="pl-2">Retail</span>
                     </label>
                     <label>
-                      <input type="radio" name="subject" value="general" />
+                      <input type="radio" name="subject" value="Bodega" onChange={(e) => setNegocio(e.target.value)}/>
                       <span className="pl-2">Bodega</span>
                     </label>
                   </div>
                 </div>
                 <div className="flex flex-col">
                   <div className="flex flex-col gap-5">
-                    <label htmlFor="" className="font-semibold">Mensaje</label>
-                    <textarea type="text" placeholder="Escribe tu mensaje" className="rounded-xl p-2 border-2 border-black"/>
+                    <label htmlFor="mensaje" className="font-semibold">Mensaje</label>
+                    <textarea type="text" id="mensaje" value={mensaje} onChange={(e) => setMensaje(e.target.value)} placeholder="Escribe tu mensaje" className="rounded-xl p-2 border-2 border-black"/>
                   </div>
                 </div>
                 <div className="text-end py-5">
@@ -163,21 +189,21 @@ function Contact() {
                 <div className="grid grid-cols-1 gap-2 items-center">
                   <div className="flex flex-col gap-1 py-2">
                     <label htmlFor="" className="font-semibold">Nombre</label>
-                    <input type="text" id="nombre" placeholder="Ejemplo: Juan Perez" className="p-2"/>
+                    <input type="text" id="nombre" value={nombre} onChange={(e) => setNombre(e.target.value)} placeholder="Ejemplo: Juan Perez" className="p-2"/>
                   </div>
                   <div className="flex flex-col gap-1 py-2">
                     <label htmlFor="" className="font-semibold">Telefono</label>
-                    <input type="number" id="telefono" placeholder="Ejemplo: 987654321" className="p-2 sin-flechas"/>
+                    <input type="number" id="telefono" value={telefono} onChange={(e) => setTelefono(e.target.value)} placeholder="Ejemplo: 987654321" className="p-2 sin-flechas"/>
                   </div>
                 </div>
                 <div className="grid grid-cols-1 gap-2 items-center">
                   <div className="flex flex-col gap-1 py-2">
                     <label htmlFor="" className="font-semibold">Correo electronico</label>
-                    <input type="email" id="email" placeholder="Ejemplo: ejemplo@correo.com.pe" className="p-2"/>
+                    <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Ejemplo: ejemplo@correo.com.pe" className="p-2"/>
                   </div>
                   <div className="flex flex-col gap-1 py-2">
                     <label htmlFor="" className="font-semibold">¿Cual es el nombre de tu negocio?</label>
-                    <input type="text" id="empresa" placeholder="Ejemplo: Restaurante Marca" className="p-2"/>
+                    <input type="text" id="empresa" value={empresa} onChange={(e) => setEmpresa(e.target.value)} placeholder="Ejemplo: Restaurante Marca" className="p-2"/>
                   </div>
                 </div>
               </div>
@@ -187,16 +213,16 @@ function Contact() {
                     <p className="font-semibold">Seleccione el tipo de negocio</p>
                   </div>
                   <div className="flex flex-col">
-                    <label>
-                      <input type="radio" name="subject" value="general" />
+                  <label>
+                      <input type="radio" name="subject" value="Restaurante" onChange={(e) => setNegocio(e.target.value)}/>
                       <span className="pl-2">Restaurante</span>
                     </label>
                     <label>
-                      <input type="radio" name="subject" value="general" />
+                      <input type="radio" name="subject" value="Retail" onChange={(e) => setNegocio(e.target.value)}/>
                       <span className="pl-2">Retail</span>
                     </label>
                     <label>
-                      <input type="radio" name="subject" value="general" />
+                      <input type="radio" name="subject" value="Bodega" onChange={(e) => setNegocio(e.target.value)}/>
                       <span className="pl-2">Bodega</span>
                     </label>
                   </div>
@@ -204,7 +230,7 @@ function Contact() {
                 <div className="flex flex-col">
                   <div className="flex flex-col gap-5">
                     <label htmlFor="" className="font-semibold">Mensaje</label>
-                    <textarea type="text" placeholder="Escribe tu mensaje" className="rounded-xl p-2 border-2 border-black"/>
+                    <textarea type="text" id="mensaje" value={mensaje} onChange={(e) => setMensaje(e.target.value)} placeholder="Escribe tu mensaje" className="rounded-xl p-2 border-2 border-black"/>
                   </div>
                 </div>
                 <div className="text-start py-5">
