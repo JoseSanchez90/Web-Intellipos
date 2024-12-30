@@ -24,7 +24,6 @@ function Contact() {
         customClass: {
           confirmButton: "custom-ok-button", // Clase personalizada
         },
-        draggable: true,
       });
     } else {
       // Si todos los campos están completos, muestra la alerta de éxito
@@ -35,10 +34,16 @@ function Contact() {
         customClass: {
           confirmButton: "custom-ok-button", // Clase personalizada
         },
-        draggable: true,
+      }).then(() => {
+        // Limpia el formulario después de cerrar la alerta
+        setNombre('');
+        setTelefono('');
+        setEmail('');
+        setEmpresa('');
+        setNegocio('');
+        setMensaje('');
       });
-      // Aquí puedes agregar el código para enviar el formulario (ejemplo: hacer una petición a la API)
-      console.log('Formulario enviado');
+      
     }
   };
 
