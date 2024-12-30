@@ -50,7 +50,7 @@ function Navbar() {
   <div className="flex justify-center">
     <div className={`hidden fixed top-0 z-10 md:flex flex-row justify-between items-center bg-white transition-all duration-500 ${isScrolled ? "shadow-xl rounded-full bg-slate-100 px-20 py-4 text-sm my-2 mx-2 w-[85%] transform" : "px-12 md:px-14 md:py-6 2xl:px-14 2xl:py-6 text-base w-full"}`}>
       
-        <img src={logoInt} alt={logoInt} className={`transition-all duration-300 ${isScrolled ? "w-28 2xl:w-32" : "w-40 2xl:w-44"}`}/>
+        <NavLink to="/"><img src={logoInt} alt={logoInt} className={`transition-all duration-300 ${isScrolled ? "w-28 2xl:w-32" : "w-40 2xl:w-44"}`}/></NavLink>
 
       <div className="font-semibold flex gap-12 items-center">
 

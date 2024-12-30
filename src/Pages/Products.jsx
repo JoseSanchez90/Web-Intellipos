@@ -54,7 +54,7 @@ function Products() {
                 <div className="flex flex-col pt-4 gap-2">
                   <p className="text-base font-bold">Desde:</p>
                   <p className="text-xl md:text-4xl font-bold">US$1199.00</p>
-                  <button className="buynow px-6 md:px-12 py-2 md:py-5 bg-green-500 text-white text-lg md:text-2xl font-semibold md:font-bold rounded-xl">COMPRAR AHORA</button>
+                  <a href="https://wa.me/51960041583?text=Hola, quiero informacion del TERMINAL DE PUNTO DE VENTA NCR PX10 %20https://intellipos.vercel.app/productos" target="_blank" rel="noopener noreferrer"><button className="buynow px-6 md:px-12 py-2 md:py-5 bg-green-500 text-white text-lg md:text-2xl font-semibold md:font-bold rounded-xl">COMPRAR AHORA</button></a>
                 </div>
             </div>
           </div>
@@ -76,7 +76,7 @@ function Products() {
                   <h3 className="font-semibold md:font-bold text-base md:text-lg text-slate-700">{product.model}</h3>
                   <div className="w-full h-full flex flex-col justify-between gap-5">
                     <h3 className="font-light md:font-normal text-sm text-black">{product.description}</h3>
-                    <button className="btn-contact">Cotizar</button>
+                    <a href="https://wa.me/51960041583?text=Hola, quiero informacion del producto: %20https://intellipos.vercel.app/productos" target="_blank" rel="noopener noreferrer" className="btn-contact text-center"><button>Cotizar</button></a>
                   </div>
                 </div>
               </div>          

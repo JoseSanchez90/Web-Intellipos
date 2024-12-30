@@ -27,7 +27,7 @@ function Home() {
           <div className="pt-[50%] px-8 md:pt-[15%] md:pr-[40%] md:pl-[5%] relative animate-fade-down animate-duration-[1000ms] animate-delay-500">
             <p className="text-white font-semibold text-xl md:text-4xl 2xl:text-5xl pb-6">Llevamos la adminsitracion de tu restaurante al siguiente nivel</p>
             <p className="text-white font-normal text-sm md:text-lg 2xl:text-xl pb-12">El manejo de tu restaurante no tiene por qué ser difícil, cuando cuentas con una herramienta eficiente, escalable y fácil de usar, lo que resultará en más clientes satisfechos y leales.</p>
-            <button className="text-sm btn-info md:font-semibold md:text-lg 2xl:text-xl">Solicitar información</button>
+            <a href="https://wa.me/51960041583" target="_blank"><button className="text-sm btn-info md:font-semibold md:text-lg 2xl:text-xl">Solicitar información</button></a>
           </div>
         </div>
 
@@ -74,7 +74,7 @@ function Home() {
           <div className="flex flex-col text-right items-end py-36 pr-[5%] px-5 md:py-20 md:px-60 md:pr-[5%]">
             <p className="text-white font-semibold text-4xl md:text-4xl pb-6">Software</p>
             <p className="text-white font-normal text-lg md:text-xl pb-8">Ofrecemos una solución completa para el sector de restaurantes que se adapta a cualquier tamaño y/o tipo de restaurante desde la operación de tu negocio hasta la fidelización de tus clientes</p>
-            <button className="btn-info md:font-semibold md:text-xl">Más información</button>
+            <a href="https://wa.me/51960041583" target="_blank"><button className="btn-info md:font-semibold md:text-xl">Más información</button></a>
           </div>
         </div>
       
@@ -83,7 +83,7 @@ function Home() {
           <div className="h-full flex flex-col items-start justify-center pl-[5%] md:pl-[10%]">
             <p className="text-white font-semibold text-4xl md:text-4xl pb-6">Hardware</p>
             <p className="text-white font-normal text-lg md:text-xl pb-8">Contamos con una línea completa de equipos, diseñador especial mente para operar en el exigente ambiente de restaurantes</p>
-            <button className="btn-info md:font-semibold md:text-xl">Más información</button>
+            <a href="https://wa.me/51960041583" target="_blank"><button className="btn-info md:font-semibold md:text-xl">Más información</button></a>
           </div>
           <div className="h-full flex flex-col items-center">
             <img src={ncr1} alt={ncr1} className="w-52 md:w-64" />
