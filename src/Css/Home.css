@@ -136,3 +136,48 @@
     .operacion, .administracion, .fidelizacion {
       box-shadow: 8px 8px 0px #1dbf58;
     }
+
+  /* CONTACT */
+
+    .gridcontact {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+
+    .subgrid {
+      display: grid;
+      grid-template-rows: auto auto auto;
+    }
+
+    .subgrid2 {
+      width: 100%;
+      display: grid;
+      grid-template-rows: auto;
+    }
+
+    .shadowcontact {
+      background-color: #fff;
+      box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    input {
+      border-bottom: 1px solid black;
+      outline: none;
+    }
+
+    textarea {
+      resize: none;
+      height: 100px;
+    }
+
+    .sin-flechas {
+      -moz-appearance: textfield; /* Elimina flechas en Firefox */
+      -webkit-appearance: none; /* Elimina flechas en navegadores WebKit (Chrome, Safari) */
+      appearance: none; /* Para navegadores modernos que soportan 'appearance' */
+    }
+    
+    .sin-flechas::-webkit-inner-spin-button, 
+    .sin-flechas::-webkit-outer-spin-button {
+      -webkit-appearance: none; /* Elimina flechas en Chrome, Safari */
+      margin: 0; /* Opcional: elimina márgenes extra */
+    }
