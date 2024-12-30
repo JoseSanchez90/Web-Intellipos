@@ -1,7 +1,20 @@
 import NavbarMobile from "../Components/NavbarMobile"
 import bgAbout from '../assets/aboutbg.png'
+import Swal from "sweetalert2";
 
 function Contact() {
+
+  const handleClick = () => {
+    Swal.fire({
+      title: "Mensaje enviado!",
+      icon: "success",
+      confirmButtonText: 'Cerrar',
+      customClass: {
+        confirmButton: "custom-ok-button", // Clase personalizada
+      },
+      draggable: true, // Hace que la alerta sea arrastrable
+    });
+  };
 
   return (
 
@@ -102,7 +115,7 @@ function Contact() {
                   </div>
                 </div>
                 <div className="text-end py-5">
-                  <button className="btn-info">Enviar Mensaje</button>
+                  <button className="btn-info" onClick={handleClick}>Enviar Mensaje</button>
                 </div>
               </div>
             </div>
@@ -195,7 +208,7 @@ function Contact() {
                   </div>
                 </div>
                 <div className="text-start py-5">
-                  <button className="btn-info">Enviar Mensaje</button>
+                  <button className="btn-info" onClick={handleClick}>Enviar Mensaje</button>
                 </div>
               </div>
             </div>

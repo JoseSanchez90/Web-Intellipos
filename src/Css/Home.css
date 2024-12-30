@@ -181,3 +181,19 @@
       -webkit-appearance: none; /* Elimina flechas en Chrome, Safari */
       margin: 0; /* Opcional: elimina márgenes extra */
     }
+    
+/* SWEETALERTA2  */
+
+    .custom-ok-button {
+      background-color: #28a745 !important; /* Color verde */
+      color: #fff !important; /* Texto blanco */
+      border: none !important; /* Sin bordes */
+      border-radius: 5px !important; /* Bordes redondeados */
+      padding: 10px 20px !important; /* Espaciado interno */
+      font-size: 16px !important; /* Tamaño del texto */
+      cursor: pointer !important; /* Cursor estilo puntero */
+    }
+
+    .custom-ok-button:hover {
+      background-color: #218838 !important; /* Verde más oscuro al pasar el mouse */
+    }
