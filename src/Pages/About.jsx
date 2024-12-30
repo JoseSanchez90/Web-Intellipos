@@ -66,21 +66,21 @@ function About() {
           
           <p className="font-medium md:font-bold text-lg md:text-2xl text-green-950 md:px-32 text-center py-5 md:py-10">NUESTROS VALORES</p>
 
-          <div className="grid grid-cols-2 gap-1 px-2 md:gap-4 md:px-36">
+          <div className="grid grid-cols-2 gap-2 px-2 md:gap-4 md:px-36">
 
-            <div className="text-white about-bg flex flex-col gap-1 md:gap-4 px-2 md:px-6 py-4 md:py-8 md:text-center rounded-tl-xl md:rounded-xl md:hover:scale-95 transition duration-150">
+            <div className="text-white about-bg flex flex-col gap-2 md:gap-4 px-2 md:px-6 py-4 md:py-8 md:text-center rounded-xl md:rounded-xl md:hover:scale-95 transition duration-150">
               <p className="text-base md:text-xl text-center md:font-semibold">RESPETO</p>
               <p className="text-sm text-center font-light md:font-normal">Aceptación y reconocimiento de los valores, puntos de vista y prácticas de nuestros asociados, clientes y proveedores</p>
             </div>
-            <div className="text-white about-bg flex flex-col gap-1 md:gap-4 px-2 md:px-6 py-4 md:py-8 md:text-center rounded-tr-xl md:rounded-xl md:hover:scale-95 transition duration-150">
+            <div className="text-white about-bg flex flex-col gap-2 md:gap-4 px-2 md:px-6 py-4 md:py-8 md:text-center rounded-xl md:rounded-xl md:hover:scale-95 transition duration-150">
               <p className="text-base md:text-xl text-center md:font-semibold">CALIDAD</p>
               <p className="text-sm text-center font-light md:font-normal">Implantar productos y servicios que operen con eficiencia, de acuerdo a sus expectativas y que les permitan potenciar su negocio, creando valor para los clientes y propietarios</p>
             </div>
-            <div className="text-white about-bg flex flex-col gap-1 md:gap-4 px-2 md:px-6 py-4 md:py-8 md:text-center rounded-bl-xl md:rounded-xl md:hover:scale-95 transition duration-150">
+            <div className="text-white about-bg flex flex-col gap-2 md:gap-4 px-2 md:px-6 py-4 md:py-8 md:text-center rounded-xl md:rounded-xl md:hover:scale-95 transition duration-150">
               <p className="text-base md:text-xl text-center md:font-semibold">COMPROMISO Y RESPONSABILIDAD</p>
               <p className="text-sm text-center font-light md:font-normal">Cumplimiento de los acuerdos y condiciones establecidos con los clientes, proveedores y empleados en calidad, contenido, plazos y presupuestoseedores</p>
             </div>
-            <div className="text-white about-bg flex flex-col gap-1 md:gap-4 px-2 md:px-6 py-4 md:py-8 md:text-center rounded-br-xl md:rounded-xl md:hover:scale-95 transition duration-150">
+            <div className="text-white about-bg flex flex-col gap-2 md:gap-4 px-2 md:px-6 py-4 md:py-8 md:text-center rounded-xl md:rounded-xl md:hover:scale-95 transition duration-150">
               <p className="text-base md:text-xl text-center md:font-semibold">ACTITUD POSITIVA Y DE RESPETO</p>
               <p className="text-sm text-center font-light md:font-normal">Disposición y ánimos de siempre atender las necesidades de nuestros clientes con altos estándares de calidad</p>
             </div>
