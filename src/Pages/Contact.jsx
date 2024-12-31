@@ -54,7 +54,7 @@ function Contact() {
       
       <NavbarMobile />
 
-        <div className="grid grid-cols-1 py-20">
+        <div className="grid grid-cols-1 py-20 md:pt-10 md:py-20 2xl:py-20">
 
           <div className="flex flex-col text-center gap-5 px-2 py-10 md:py-20">
             <div>

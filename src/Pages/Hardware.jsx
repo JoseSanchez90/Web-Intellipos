@@ -1,4 +1,3 @@
-import React from 'react'
 import NavbarMobile from '../Components/NavbarMobile'
 import fondo2 from '../assets/2.jpg'
 import nstarr from '../assets/3nstar1.png'
@@ -17,13 +16,13 @@ function Hardware() {
         {/* SPOT 1 */}
         
         <div className="h-full w-full relative animate-fade-down animate-duration-[1000ms] animate-delay-500">
-          <div className="grid grid-cols-1 md:grid-cols-2 px-10 gap-10 pt-52 md:pt-56 2xl:pt-48 md:items-center justify-items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 px-10 gap-14 pt-52 md:pt-44 2xl:pt-48 md:items-center justify-items-center">
             <div className="flex flex-col md:pl-20">
               <p className="text-white font-semibold text-xl md:text-4xl 2xl:text-5xl pb-6">Hardware</p>
               <p className="text-white font-normal text-sm md:text-lg 2xl:text-xl pb-12">Contamos con una línea completa de equipos, diseñados especialmente para operar en el exigente ambiente de restaurantes. Dicho equipamiento soporta la solución de Aloha y otros sistemas disponibles en el mercado</p>
             </div>
             <div className="md:px-20">
-              <img src={nstarr} alt={nstarr} className="w-[250px] md:w-[500px]"/>
+              <img src={nstarr} alt={nstarr} className="w-[300px] md:w-[500px]"/>
             </div>
           </div>
         </div>

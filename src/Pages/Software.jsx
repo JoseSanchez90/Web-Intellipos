@@ -16,10 +16,10 @@ function Software() {
 
 {/* SPOT 1 */}
         
-        <div className="flex flex-col items-center pt-44 md:pt-36 gap-10">
-          <p className="text-xl md:text-2xl font-semibold text-white text-center">LLEVAMOS LA ADMINISTRACION DE TU RESTAURANTE AL SIGUIENTE NIVEL</p>
-          <p className="text-sm md:text-xl font-normal md:font-normal text-white px-2 md:px-80 text-center">El manejo de tu restaurante no tiene por qué ser difícil, cuentas con una herramienta eficiente, escalable y fácil de usar, lo que resultará en más clientes satisfechos y leales</p>
-          <iframe className="w-[355px] h-[200px] md:w-[600px] md:h-[350px]" src="https://www.youtube.com/embed/EbRcmiT_YBI?si=iniO9LOwkTBbJIcW" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+        <div className="flex flex-col items-center pt-44 md:pt-28 2xl:pt-36 gap-10">
+          <p className="text-xl 2xl:text-2xl font-semibold text-white text-center">LLEVAMOS LA ADMINISTRACION DE TU RESTAURANTE AL SIGUIENTE NIVEL</p>
+          <p className="text-sm md:text-lg 2xl:text-xl font-normal md:font-normal text-white px-2 md:px-80 text-center">El manejo de tu restaurante no tiene por qué ser difícil, cuentas con una herramienta eficiente, escalable y fácil de usar, lo que resultará en más clientes satisfechos y leales</p>
+          <iframe className="w-[355px] h-[200px] md:w-[450px] md:h-[250px] 2xl:w-[600px] 2xl:h-[350px]" src="https://www.youtube.com/embed/EbRcmiT_YBI?si=iniO9LOwkTBbJIcW" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
         </div>
       </div>
 
