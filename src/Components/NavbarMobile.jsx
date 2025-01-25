@@ -44,7 +44,7 @@ useEffect(() => {
 
   return (
     
-    <div className={`lg:hidden w-full fixed top-0 z-10 bg-white flex justify-between transition-all duration-300 ${isScrolled ? "flex-col shadow-lg bg-white py-5" : "py-7 px-7"}`}>
+    <div className={`md:hidden w-full fixed top-0 z-10 bg-white flex justify-between transition-all duration-300 ${isScrolled ? "flex-col shadow-lg bg-white py-5" : "py-7 px-7"}`}>
 
         <button onClick={() => setIsOpen(!isOpen)} className={`flex flex-col items-center animate-flip-down animate-duration-300 ${isScrolled ? "animate-fade-right" : "animate-fade-left"}`}>
           <svg width="32px" height="32px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#2dd100"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="#2dd100" fillRule="evenodd" d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"></path> </g></svg>

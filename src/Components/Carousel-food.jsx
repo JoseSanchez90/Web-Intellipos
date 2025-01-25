@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import kfc from '../assets/kfc-logo.jpg'
 import dunkin from '../assets/dd-logo.jpg'
 import chilis from '../assets/chilis-logo.jpg'

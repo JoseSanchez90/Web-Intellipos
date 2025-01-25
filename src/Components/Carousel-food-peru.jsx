@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import ajiles from '../assets/ajiles-logo.png'
 import palermo from '../assets/palermo-logo.png'
 import peruanito from '../assets/peruanito-logo.jpg'
