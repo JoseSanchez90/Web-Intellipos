@@ -1,8 +1,23 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Pagina web para una Empresa 📝  
 
-Currently, two official plugins are available:
+Realice esta pagina web para la empresa donde laboro, es una empresa donde venden sistema de venta para restaurantes, retail y bodegas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologías  
+- React.js  
+- Vite  
+- TailwindCSS  
+
+## 📥 Instalación  
+1. Clona el repositorio:  
+   
+   git clone https://github.com/JoseSanchez90/Web-Intellipos.git
+
+2. Ejecuta:
+
+   npm install
+
+3. Ejecuta el proyecto:
+
+   npm run dev
